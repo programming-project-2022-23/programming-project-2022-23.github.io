@@ -723,7 +723,7 @@
                   <li>Varargs</li>
                   <li>Collections</li>
                   <li>Custom exceptions</li>
-                  <li>Try-catch blocks handling</li>
+                  <li>Try-catch blocks</li>
                   <li>Method overriding</li>
                   <li>Method overloading</li>
                   <li>Lambda expressions</li>
@@ -744,7 +744,6 @@
                   <li>Logging</li>
                   <li>Casting</li>
                   <li>Graphical user interface (e.g. JavaFX)</li>
-                  <li>Optionals</li>
                 </ol>
                 <p>Artificial usage of techniques just to meet the quota will not be accepted.</p>
                 <h2 id="create-a-gitignore-file" style="position:relative;"><a href="#create-a-gitignore-file"
@@ -766,6 +765,7 @@
                   <li>compiled classes</li>
                   <li>logs</li>
                   <li>run-time files</li>
+                  <li>OS-generated files (e.g. <code class="language-text">.DS_Store</code></strong>)</li>
                 </ul>
                 <h2 id="write-a-good-readmemd-file" style="position:relative;"><a href="#write-a-good-readmemd-file"
                     aria-label="write a good readmemd file permalink" class="anchor before"><svg aria-hidden="true"
@@ -826,15 +826,15 @@
                     </svg></a>Write unit tests</h2>
                 <p>You must use <a href="https://junit.org/junit5/">JUnit 5</a> as your testing framework.</p>
                 <p>Your tests should be executed by invoking the command:</p>
-                <div class="gatsby-highlight" data-language="bash">
+                <div class="gatsby-highlight" data-language="command-line">
                   <pre
-                    class="language-bash"><code class="language-bash"><span class="command-line-prompt"><span data-user=user data-host=localhost></span></span>mvn <span class="token builtin class-name">test</span></code></pre>
+                          class="language-command-line"><code class="language-command-line">$ mvn test</code></pre>
                 </div>
                 <p>Your test suite will be evaluated regarding:</p>
                 <ul>
                   <li><em>coverage</em>: how much of my code is tested?</li>
                   <li><em>correctness</em>: are my tests useful?</li>
-                  <li><em>understandability</em>: can people understand the expected behavior of my functions via my
+                  <li><em>understandability</em>: can people understand the expected behavior of my methods via my
                     tests?</li>
                 </ul>
                 <p><strong>Each group member should write tests for her own methods. Other group members may (and
@@ -852,15 +852,15 @@
                     Plugin</a> for your project so that the documentation can be generated with the command:</p>
                 <div class="gatsby-highlight" data-language="command-line">
                   <pre
-                    class="language-command-line"><code class="language-command-line">mvn javadoc:javadoc</code></pre>
+                    class="language-command-line"><code class="language-command-line">$ mvn javadoc:javadoc</code></pre>
                 </div>
                 <p>Your documentation will be evaluated regarding</p>
                 <ul>
-                  <li><em>utility</em>: how useful is the documentation to a developer that is trying to understand or use my code)?</li>
-                  <li><em>understandability</em>: can people understand the classes and methods that I documented?</li>
+                  <li><em>utility</em>: how useful is the documentation to a developer that is trying to understand or use my code?</li>
+                  <li><em>understandability</em>: can people understand the classes and methods that I documented (without looking at their implementation)?</li>
                 </ul>
-                <p><strong>Each group member should document her own code. Other group members should review
-                    the documentation of others.</strong></p>
+                <p><strong>Each group member should document her own code. Group members should review
+                    the documentation of each other.</strong></p>
                 <h2 id="project-presentation" style="position:relative;"><a href="#project-presentation"
                     aria-label="project presentation permalink" class="anchor before"><svg aria-hidden="true"
                       focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -870,9 +870,9 @@
                     </svg></a>Project presentation</h2>
                 <p>Record a 5-minute video presenting your project, in which you:</p>
                 <ul>
-                  <li>Explain your idea.</li>
-                  <li>Demonstrate your project.</li>
-                  <li>Highlight interesting aspects of your project.</li>
+                  <li>explain your idea,</li>
+                  <li>demonstrate your project,</li>
+                  <li>highlight interesting aspects of your project.</li>
                 </ul>
                 <p>Add a link to the recording in your <strong><code class="language-text">README.md</code></strong> file.</p>
               </div>
