@@ -1,33 +1,24 @@
 # OS X generated files
 *.DS_Store
 
-
-# Eclipse generated files
-.classpath
-.projecttmp.*
-.project
-.pydevproject
-bin
-.settings
-
 # Intellij generated files
 *.iml
-.idea
+*.idea*
 
-# Visual Studio Code
-.vscode
-
-# Protege generated files
-catalog-v*.xml
-
-# Temp files
+# Latex
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
 *~
+*auto/
+
+**~
 \#*
-tmp.*
 
 *.log
-
-.run
 
 # vi
 *.sw[klmnop]
