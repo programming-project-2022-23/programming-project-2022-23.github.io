@@ -1,0 +1,24 @@
+# OS X generated files
+*.DS_Store
+
+# Intellij generated files
+*.iml
+*.idea*
+
+# Latex
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
+*~
+*auto/
+
+**~
+\#*
+
+*.log
+
+# vi
+*.sw[klmnop]
