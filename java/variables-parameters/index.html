@@ -760,8 +760,8 @@
                     </svg></a>Default values</h2>
                 <p>If not explicitly initialized, an instance variable is given a default value.</p>
                 <ul>
-                  <li>A reference instance variable is initialized as <code class="language-text">null</code></li>
-                  <li>A primitive instance variable is initialized according to its type
+                  <li>A reference instance variable is initialized as <code class="language-text">null</code>.</li>
+                  <li>A primitive instance variable is initialized according to its type.
                     <ul>
                       <li>int to <code class="language-text">0</code></li>
                       <li>char to <code class="language-text">'\u000'</code>, and</li>
@@ -771,7 +771,7 @@
                 </ul>
                 <blockquote>
                   <p>A local variable is never given a default value and <strong>MUST</strong> be initialized by the
-                    developer</p>
+                    developer.</p>
                 </blockquote>
                 <h2 id="passing-parameters" style="position:relative;"><a href="#passing-parameters"
                     aria-label="passing parameters permalink" class="anchor before"><svg aria-hidden="true"
@@ -882,22 +882,22 @@ main: Rick 424058530</code></pre>
                       </path>
                     </svg></a>Passing parameters</h2>
                 <ul>
-                  <li>When a method is invoked and receive parameters, how are they passed?
+                  <li>When a method is invoked and receives parameters, how are they passed?
                     <ul>
                       <li>by reference</li>
                       <li>by value</li>
                     </ul>
                   </li>
-                  <li>When a parameter is passed by <strong>reference</strong>:
+                  <li>When a parameter is passed by <strong>reference</strong>
                     <ul>
-                      <li>the caller and the callee (the function) use the same variable for the parameter</li>
-                      <li>if the callee modifies the parameter variable, the effect is visible to the caller’s variable.
+                      <li>the caller and the callee (the method) use the same variable for the parameter.</li>
+                      <li>If the callee modifies the parameter variable, the effect is visible to the caller’s variable.
                       </li>
                     </ul>
                   </li>
-                  <li>Wwhen a parameter is passed by <strong>value</strong>:
+                  <li>When a parameter is passed by <strong>value</strong>:
                     <ul>
-                      <li>the caller and callee have two independent variables with the same value</li>
+                      <li>the caller and callee have two independent variables with the same value.</li>
                       <li>If the callee modifies the parameter variable, the effect is not visible to the caller.</li>
                     </ul>
                   </li>
@@ -916,7 +916,7 @@ main: Rick 424058530</code></pre>
                 <p>Primitive variable are passed by value.</p>
                 <p>References values are passed by value.</p>
                 <p>The key to understanding why the results were different in our previous experiment is realizing that
-                  in the code excerpt below:</p>
+                  in the code excerpt below.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre
                     class="language-java"><code class="language-java"><span class="token class-name">Person</span> me<span class="token punctuation">;</span></code></pre>
@@ -1008,7 +1008,7 @@ j <span class="token operator">=</span> <span class="token number">20</span><spa
                     </svg></a>Immutability</h2>
                 <p>Normal reference variables cannot be made immutable just by using the <code
                     class="language-text">final</code> keyword, which only prevents reassignment to another object.</p>
-                <p>The object that the reference points to can still be changed, as shown in the code below:</p>
+                <p>The object that the reference points to can still be changed, as shown in the code below.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token punctuation">{</span>
   <span class="token class-name">String</span> name<span class="token punctuation">;</span>
