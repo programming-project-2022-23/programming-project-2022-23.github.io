@@ -715,11 +715,11 @@
                     </svg></a>Learning goals</h2>
                 <p>In this module, you will learn about:</p>
                 <ol>
-                  <li>How Java programs are executed</li>
-                  <li>What is the JVM and its main components</li>
-                  <li>What is the classpath</li>
-                  <li>How Java passes parameters</li>
-                  <li>What is the Java Memory Model</li>
+                  <li>how Java programs are executed,</li>
+                  <li>JVM and its main components,</li>
+                  <li>the CLASSPATH environment variable,</li>
+                  <li>how Java passes parameters, and</li>
+                  <li>the Java Memory Model.</li>
                 </ol>
                 <h2 id="sources" style="position:relative;"><a href="#sources" aria-label="sources permalink"
                     class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1"
@@ -756,9 +756,7 @@
                     </svg></a>Programming languages</h2>
                 <p>Programmers write instructions in various programming languages, some directly understandable by
                   computers and others requiring intermediate translation steps.</p>
-                <p>Hundreds of programming languages are in use today.</p>
-                <p>Check out <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">this</a> Wikipedia
-                  entry!</p>
+                <p><a href="https://en.wikipedia.org/wiki/List_of_programming_languages">Hundreds of programming languages</a> are in use today.</p>
                 <p>These may be divided into three general types:</p>
                 <ol>
                   <li><a href="https://en.wikipedia.org/wiki/Machine_code">Machine languages</a></li>
@@ -774,15 +772,15 @@
                       </path>
                     </svg></a>Machine languages</h2>
                 <p><a href="https://en.wikipedia.org/wiki/Machine_code">Machine languages</a>, often called
-                  <strong>machine code</strong> are extremely low level programming languages that are <strong>extremely
+                  <strong>machine code</strong> are low level programming languages that are <strong>
                     cumbersome</strong> for humans.</p>
                 <p>Any computer (any CPU, to be more exact) can <strong>only directly understand its own machine
                     language</strong>, defined by its hardware design.</p>
-                <p>Machine languages generally consist of numbers (ultimately reduced to 1s and 0s) that instruct
+                <p>Machine languages generally consist of numbers, ultimately reduced to 1s and 0s, that instruct
                   computers to perform their most elementary operations one at a time.</p>
-                <p>Machine languages are machine/processor dependent (a particular machine language can be used on only
-                  one type of computer).</p>
-                <p>Each computer/processor has only a (VERY) limited instruction set (i.e. number of operations):</p>
+                <p>Machine languages are machine/processor dependent: a particular machine language can be used on only
+                  one type of computer.</p>
+                <p>Each computer/processor has only a limited instruction set, i.e., number of operations:</p>
                 <ul>
                   <li>logic/arithmetic operations</li>
                   <li>bit manipulation</li>
@@ -823,7 +821,7 @@
                 <p>These abbreviations formed the basis of assembly languages.</p>
                 <p>Translator programs called <strong>assemblers</strong> were developed to convert assembly-language
                   programs to machine language.</p>
-                <p>Example: how to instruct the processor to move 97 into the register AL:</p>
+                <p>Example: instruction to the processor to move 97 into the register AL.</p>
                 <ul>
                   <li>In machine code (binary): <code class="language-text">10110000 01100001</code></li>
                   <li>In machine code (hex): <code class="language-text">B0 61</code></li>
@@ -892,7 +890,7 @@ end main</code></pre>
                     </svg></a>High-level programming languages</h2>
                 <p>With the advent of assembly languages, computer usage increased rapidly, but programmers still had to
                   use numerous instructions to accomplish even the simplest tasks.</p>
-                <p>To speed the programming process, high-level languages were developed in which single statements
+                <p>To speed the programming process, high-level languages were developed, in which single statements
                   could be written to accomplish substantial tasks.</p>
                 <p>High-level languages allow you to write instructions that look almost like everyday English and
                   contain commonly used mathematical notations.</p>
@@ -929,11 +927,11 @@ end main</code></pre>
                     </a>
                   </span></p>
                 <p>If you are curious about how used are programming languages, the <a
-                    href="https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language">Stack
+                    href="https://survey.stackoverflow.co/2022/#most-popular-technologies-language">Stack
                     Overflow Developer Survey 2021</a> is a good source of information.</p>
                 <p>Let's take a look?</p>
-                <p><a href="https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language"><img
-                      src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2021/08/blog-dev-survey-2021-results.png"
+                <p><a href="https://survey.stackoverflow.co/2022/#most-popular-technologies-language"><img
+                      src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2022/06/so-dev-survey-2022-results-2048x1075.png"
                       alt="developer-survey"></a></p>
                 <h2 id="translating-high-level-code" style="position:relative;"><a href="#translating-high-level-code"
                     aria-label="translating high level code permalink" class="anchor before"><svg aria-hidden="true"
@@ -1051,8 +1049,8 @@ end main</code></pre>
                 <p>Another way to carry out the translation is by using a technique called compiling.</p>
                 <p>When we compile source code into machine code, we:</p>
                 <ul>
-                  <li>translate every line of code,</li>
-                  <li>execute the machine code</li>
+                  <li>translate every line of code, and then</li>
+                  <li>execute the machine code.</li>
                 </ul>
                 <p>We can compare this to the concept of translating a book:</p>
                 <p><span class="gatsby-resp-image-wrapper"
@@ -1123,17 +1121,17 @@ end main</code></pre>
                 <ul>
                   <li>Pros:
                     <ul>
-                      <li>Yields smaller program size</li>
-                      <li>Portability: with the code and an interpreter, we can run it on any platform (e.g. Windows,
-                        Linux, macOS)</li>
-                      <li>Tend to be more flexible for programmers to use</li>
+                      <li>Yields smaller program size.</li>
+                      <li>Portability: with the code and an interpreter, we can run it on any platform, e.g. Windows,
+                        Linux, macOS.</li>
+                      <li>Tend to be more flexible for programmers to use.</li>
                     </ul>
                   </li>
                   <li>Cons:
                     <ul>
-                      <li>Program runs slower</li>
-                      <li>Requires an interpreter to run</li>
-                      <li>User has access to the source code</li>
+                      <li>Program runs slower.</li>
+                      <li>Requires an interpreter to run.</li>
+                      <li>User has access to the source code.</li>
                     </ul>
                   </li>
                 </ul>
@@ -1156,7 +1154,7 @@ end main</code></pre>
                 </ul>
                 <blockquote>
                   <p>Many programming languages have compiled and interpreted implementations. This means that languages
-                    do not have to be strictly translated in one way or another. However, for simplicity’s sake, they’re
+                    do not have to be strictly ran in one way or another. However, for simplicity’s sake, they’re
                     typically referred to as such.</p>
                 </blockquote>
                 <h2 id="mixed-languages" style="position:relative;"><a href="#mixed-languages"
@@ -1175,13 +1173,12 @@ end main</code></pre>
                 <ul>
                   <li>Pros:
                     <ul>
-                      <li>Portability</li>
-                      <li>Added structure to the language</li>
+                      <li>portability</li>
                     </ul>
                   </li>
                   <li>Cons:
                     <ul>
-                      <li>May give up performance if compared to purely compiled languages</li>
+                      <li>may give up performance if compared to purely compiled languages</li>
                     </ul>
                   </li>
                 </ul>
