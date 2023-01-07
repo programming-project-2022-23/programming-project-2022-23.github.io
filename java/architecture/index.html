@@ -715,13 +715,13 @@
                     </svg></a>Compilation and interpretation in Java</h2>
                 <p>Java is one of these mixed languages, which combines compilation and interpretation</p>
                 <ol>
-                  <li>We write java code</li>
-                  <li>We compile java code to bytecode using the Java compiler</li>
-                  <li>We run our bytecode using the <strong>Java Virtual Machine</strong></li>
-                  <li>The JVM interprets the bytecode and generates machine code to be executed by the operating system
+                  <li>We write java code.</li>
+                  <li>We compile java code to bytecode using the Java compiler.</li>
+                  <li>We run our bytecode using the <strong>Java Virtual Machine.</strong></li>
+                  <li>The JVM interprets the bytecode and generates machine code to be executed by the operating system.
                   </li>
                   <li>In some cases, the JVM will also compile the bytecode to machine code using the
-                    <strong>Just-in-time compiler</strong></li>
+                    <strong>Just-in-time compiler.</strong></li>
                 </ol>
                 <p><span 
                       class="gatsby-img-attributes" 
@@ -759,14 +759,16 @@
                     </svg></a>Compile-time errors</h2>
                 <p>When we feed a bunch of text to the compiler to convert it to machine code, we may find:</p>
                 <ul>
-                  <li>Syntax errors</li>
-                  <li>Typechecking errors</li>
+                  <li>syntax errors</li>
+                  <li>typechecking errors</li>
                 </ul>
                 <p>If the compiler succeeds, what do we know?</p>
                 <ul>
                   <li>That the program was well formed—a meaningful program in whatever language.</li>
-                  <li>That it is possible to start running the program as it is in a machine readable form. (The program
-                    might fail immediately, but at least we can try.)</li>
+                  <li>That it is possible to start running the program as it is in a machine readable form. 
+                    This does not mean that the program is correct:
+                    the program
+                    might fail immediately, but at least we can try.</li>
                 </ul>
                 <h2 id="run-time-errors" style="position:relative;"><a href="#run-time-errors"
                     aria-label="run time errors permalink" class="anchor before"><svg aria-hidden="true"
@@ -777,12 +779,12 @@
                     </svg></a>Run-time errors</h2>
                 <p>We will encounter run-time errors when we feed our bytecode to the JVM, which may or may not be
                   handled by our application.</p>
-                <p>These may be caused by:</p>
+                <p>These may be caused by, for example,</p>
                 <ul>
-                  <li>Division by zero</li>
-                  <li>Running out of memory</li>
-                  <li>Trying to open a file that isn’t there</li>
-                  <li>Trying find a web page and discovering that an alleged URL is not well formed</li>
+                  <li>division by zero,</li>
+                  <li>running out of memory,</li>
+                  <li>trying to open a file that isn’t there, or </li>
+                  <li>trying to find a web page and discovering that the URL is not well formed.</li>
                 </ul>
                 <h2 id="java-bytecode" style="position:relative;"><a href="#java-bytecode"
                     aria-label="java bytecode permalink" class="anchor before"><svg aria-hidden="true" focusable="false"
@@ -794,13 +796,13 @@
                 <p>Java bytecode is the instruction set of the Java Virtual Machine.</p>
                 <p>If you think of the JVM as "a computer inside a computer", then bytecode is:</p>
                 <ul>
-                  <li>the "machine code for the CPU of the internal computer”; or</li>
-                  <li>the “machine code for a made-up processor.”</li>
+                  <li>the "machine code for the CPU of the internal computer” or</li>
+                  <li>the “machine code for an "abstract" processor.”</li>
                 </ul>
                 <p>Each bytecode is composed of:</p>
                 <ul>
-                  <li>1 or 2 bytes that represent an instruction</li>
-                  <li>0 or more bytes that represent parameters</li>
+                  <li>1 or 2 bytes that represent an instruction, and</li>
+                  <li>0 or more bytes that represent parameters.</li>
                 </ul>
                 <p>Here is an example.</p>
                 <p>The main method below...</p>
@@ -848,9 +850,9 @@
                   <pre
                     class="language-shell"><code class="language-shell"><span class="command-line-prompt"><span data-user=user data-host=localhost></span></span>javac HelloWorld.java</code></pre>
                 </div>
-                <p>Normally, <code class="language-text">javac</code> compiles only the file that you specify on the
-                  command line, but you can coax <code class="language-text">javac</code> into compiling more than one
-                  file at a time by:</p>
+                <p> <code class="language-text">javac</code> compiles the file that you specify on the
+                  command line. You can, however, use <code class="language-text">javac</code> to compile more than one
+                  file at a time.</p>
                 <ol>
                   <li>
                     <p>If the Java file you specify on the command line contains a reference to another Java class
@@ -919,11 +921,11 @@
                     </svg></a>Java Virtual Machine (JVM)</h2>
                 <p>The Java Virtual Machine (JVM) is a software that provides an environment for running Java programs.
                 </p>
-                <p>It interprets bytecode into machine code, which it gives to the operating system to execute.</p>
-                <p>The JVM is responsible for providing on of the key features of java, <strong>platform
+                <p>It interprets bytecode into machine code, which it passes to the operating system for execution.</p>
+                <p>The JVM provides one of the key features of java, that is, <strong>platform
                     independence</strong>.</p>
                 <p>Java is portable because the same Java program can be executed in multiple platforms without making
-                  any changes in the source code.</p>
+                  any change in the source code.</p>
                 <p>You just need to write the java code for one platform and the same program will run in any platform.
                 </p>
                 <h2 id="jvm-and-platform-independence" style="position:relative;"><a
@@ -937,9 +939,9 @@
                 <p>Each platform has its own JVM.</p>
                 <p>All JVMs can:</p>
                 <ul>
-                  <li>Interpret bytecode</li>
-                  <li>Convert bytecode into machine code required for its own platform</li>
-                  <li>Interact with the operating system to run the program</li>
+                  <li>interpret bytecode,</li>
+                  <li>convert bytecode into machine code required for its own platform, and</li>
+                  <li>interact with the operating system to run the program.</li>
                 </ul>
                 <p>This makes Java programs <strong>platform independent</strong> and <strong>portable</strong>.</p>
                 <p><span class="gatsby-resp-image-wrapper"
@@ -975,10 +977,10 @@
                     </svg></a>What's inside the JVM?</h2>
                 <p>The JVM is not a monolith, but a complex application composed of several components, including:</p>
                 <ul>
-                  <li>Classloader</li>
-                  <li>Byte code verifier</li>
-                  <li>Interpreter</li>
-                  <li>Just in time compiler</li>
+                  <li>classloader, </li>
+                  <li>byte code verifier,</li>
+                  <li>interpreter, and </li>
+                  <li>just in time compiler.</li>
                 </ul>
                 <p><span class="gatsby-resp-image-wrapper"
                     style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; ">
@@ -1005,7 +1007,7 @@
                   program.</p>
                 <ol>
                   <li>Write a class <code class="language-text">Person</code> that contains two instance variables,
-                    <code class="language-text">String name</code> and <code class="language-text">int age</code>:
+                    <code class="language-text">String name</code> and <code class="language-text">int age</code>.
                     <div class="gatsby-highlight" data-language="java">
                       <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
   <span class="token class-name">String</span> name<span class="token punctuation">;</span>
@@ -1027,7 +1029,7 @@
                     </div>
                   </li>
                   <li>Write a class <code class="language-text">Runner</code> that creates two instances of <code
-                      class="language-text">Person</code> and prints their data to the console:
+                      class="language-text">Person</code> and prints their data to the console.
                     <div class="gatsby-highlight" data-language="java">
                       <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Runner</span> <span class="token punctuation">{</span>
   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1040,13 +1042,13 @@
 <span class="token punctuation">}</span></code></pre>
                     </div>
                   </li>
-                  <li>Compile both classes:
+                  <li>Compile both classes.
                     <div class="gatsby-highlight" data-language="shell">
                       <pre
                         class="language-shell"><code class="language-shell"><span class="command-line-prompt"><span data-user=user data-host=localhost></span></span>javac Person.java Runner.java</code></pre>
                     </div>
                   </li>
-                  <li>Execute the <code class="language-text">Runner</code> class
+                  <li>Execute the <code class="language-text">Runner</code> class.
                     <div class="gatsby-highlight" data-language="shell">
                       <pre
                         class="language-shell"><code class="language-shell"><span class="command-line-prompt"><span data-user=user data-host=localhost></span><span></span><span></span></span>java Runner
@@ -1055,13 +1057,13 @@ Person<span class="token punctuation">{</span>name<span class="token operator">=
                     </div>
                   </li>
                   <li>Move your <code class="language-text">Person.class</code> to a subfolder called <code
-                      class="language-text">subdir</code>
+                      class="language-text">subdir.</code>
                     <div class="gatsby-highlight" data-language="shell">
                       <pre class="language-shell"><code class="language-shell"><span class="command-line-prompt"><span data-user=user data-host=localhost></span><span data-user=user data-host=localhost></span></span><span class="token function">mkdir</span> subdir 
 <span class="token function">mv</span> Person.class subdir/Person.class</code></pre>
                     </div>
                   </li>
-                  <li>Execute the <code class="language-text">Runner</code> class again. You should see something like:
+                  <li>Execute the <code class="language-text">Runner</code> class again. 
                     <div class="gatsby-highlight" data-language="shell">
                       <pre
                         class="language-shell"><code class="language-shell"><span class="command-line-prompt"><span data-user=user data-host=localhost></span><span></span><span></span><span></span><span></span><span></span><span></span></span>java Runner
@@ -1086,11 +1088,11 @@ Caused by: java.lang.ClassNotFoundException: Person
                 <p>To solve this previous error, let us backtrack a little bit.</p>
                 <p>The <strong><code class="language-text">java</code></strong> command is called the <strong>Java
                     launcher</strong> because we use it to launch Java applications</p>
-                <p>When the Java launcher is invoked, it:</p>
+                <p>When the Java launcher is invoked, it</p>
                 <ol>
-                  <li>Gathers input from the user and the user’s environment</li>
-                  <li>Interfaces with the JVM</li>
-                  <li>Starts some bootstrapping</li>
+                  <li>gathers input from the user and the user’s environment,</li>
+                  <li>interfaces with the JVM, and </li>
+                  <li>  sstarts some bootstrapping.</li>
                 </ol>
                 <p>The Java Virtual Machine (JVM) does the rest of the work.</p>
                 <h2 id="java-class-loaders" style="position:relative;"><a href="#java-class-loaders"
@@ -1102,7 +1104,7 @@ Caused by: java.lang.ClassNotFoundException: Person
                     </svg></a>Java class loaders</h2>
                 <p><a href="https://en.wikipedia.org/wiki/Java_Classloader">Java class loaders</a> are the points of
                   entry for code into the JVM.</p>
-                <p>They is responsible for loading all classes into the JVM's memory.</p>
+                <p>They are responsible for loading all classes into the JVM's memory.</p>
                 <p>The JVM uses several class loaders:</p>
                 <ul>
                   <li>The <strong>bootstrap class loader</strong> loads the core Java libraries located in the <code
@@ -1146,13 +1148,13 @@ Caused by: java.lang.ClassNotFoundException: Person
                 <p>The user classpath is specified as a string, with</p>
                 <ul>
                   <li>a colon (<code class="language-text">:</code>) to separate the classpath entries on UNIX-based
-                    systems (Linux, Mac)</li>
+                    systems (Linux, Mac), or </li>
                   <li>a semicolon (<code class="language-text">;</code>) to separate the entries on Windows systems.
                   </li>
                 </ul>
-                <p>The possible sources of this value are:</p>
+                <p>The possible sources of this value are the following.</p>
                 <ul>
-                  <li>The default value of <code class="language-text">.</code> (the current directory)</li>
+                  <li>The default value of <code class="language-text">.</code> (the current directory).</li>
                   <li>The value of the <code class="language-text">CLASSPATH</code> environment variable, which
                     overrides the default value.</li>
                   <li>The value of the <code class="language-text">-cp</code> or <code
@@ -1171,7 +1173,7 @@ Caused by: java.lang.ClassNotFoundException: Person
                       </path>
                     </svg></a>Solving our missing class problem...</h2>
                 <p>Use the <strong><code class="language-text">java -cp</code></strong> command-line option to run our
-                  previous example correctly</p>
+                  previous example correctly.</p>
                 <div class="gatsby-highlight" data-language="shell">
                   <pre
                     class="language-shell"><code class="language-shell"><span class="command-line-prompt"><span data-user=user data-host=localhost></span><span></span><span></span></span>java -cp subdir/:. Runner
@@ -1212,12 +1214,12 @@ Person<span class="token punctuation">{</span>name<span class="token operator">=
                   </span></p>
                 <p>The <strong>bytecode verifier</strong> assesses the bytecode to see if it has any security issues.
                 </p>
-                <p>It ensures that:</p>
+                <p>It ensures that</p>
                 <ol>
-                  <li>The code follows JVM specifications</li>
-                  <li>There is no unauthorized access to memory</li>
-                  <li>The code does not cause any stack overflows</li>
-                  <li>There are no illegal data conversions in the code such as float to object references</li>
+                  <li>the code follows JVM specifications,</li>
+                  <li>there is no unauthorized access to memory,</li>
+                  <li>the code does not cause any stack overflow, and</li>
+                  <li>there are no illegal data conversions in the code such as float to object references.</li>
                 </ol>
                 <p>Once this code is verified, the JVM converts the bytecode into machine code and the execution of the
                   program can start.</p>
