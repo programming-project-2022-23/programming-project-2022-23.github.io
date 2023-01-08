@@ -706,7 +706,7 @@
               <h1>5.2. Exception Types</h1>
               <div>
                 <p>Java provides numerous exception classes, all of which are descendants of the <code
-                    class="language-text">Throwable</code> class, and all allow programs to differentiate among the
+                    class="language-text">Throwable</code> class. All of them allow programs to differentiate among the
                   various types of exceptions that can occur during the execution of a program.</p>
                 <p><span class="gatsby-resp-image-wrapper"
                     style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 752px; ">
@@ -734,11 +734,11 @@
                 <p>The <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html"><strong><code
                         class="language-text">Throwable</code></strong></a> class is the superclass of all errors and
                   exceptions in Java.</p>
-                <p>Only objects that are instances of this class (or one of its subclasses):</p>
+                <p>Only objects that are instances of this class or one of its subclasses</p>
                 <ul>
-                  <li>are thrown by the runtime environment</li>
-                  <li>can be thrown by the Java <code class="language-text">throw</code> statement</li>
-                  <li>can be an argument type in a <code class="language-text">catch</code> clause</li>
+                  <li>are thrown by the runtime environment,</li>
+                  <li>can be thrown by the Java <code class="language-text">throw</code> statement, and</li>
+                  <li>can be an argument type in a <code class="language-text">catch</code> clause.</li>
                 </ul>
                 <h2 id="class-exception" style="position:relative;"><a href="#class-exception"
                     aria-label="class exception permalink" class="anchor before"><svg aria-hidden="true"
@@ -749,8 +749,8 @@
                     </svg></a>Class <code class="language-text">Exception</code></h2>
                 <p>An instance of <a
                     href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html"><strong><code
-                        class="language-text">Exception</code></strong></a> indicates a condition that a reasonable
-                  application might want to catch.</p>
+                        class="language-text">Exception</code></strong></a> indicates a condition that an
+                  application may need to catch.</p>
                 <p>The class <code class="language-text">Exception</code> and any subclasses that are not also
                   subclasses of <code class="language-text">RuntimeException</code> are called <strong>checked
                     exceptions</strong>.</p>
@@ -771,10 +771,10 @@
                   declared in a method or constructor's <code class="language-text">throws</code> clause if they can be
                   thrown by the execution of the method or constructor and propagate outside the method or constructor
                   boundary.</p>
-                <p>Most runtime exceptions can be avoided by checking certain conditions:</p>
+                <p>Most runtime exceptions can be avoided by checking certain conditions. </p>
                 <ul>
-                  <li><code class="language-text">NullPointerException</code>: Check if reference variable is null
-                    before invoking a method on it
+                  <li><code class="language-text">NullPointerException</code> checks if reference variable is null
+                    before invoking a method on it.
                     <div class="gatsby-highlight" data-language="java">
                       <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">Integer</span> <span class="token function">getHead</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">></span></span> list<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>list <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span>
@@ -784,8 +784,8 @@
 <span class="token punctuation">}</span></code></pre>
                     </div>
                   </li>
-                  <li><code class="language-text">ArrayIndexOutOfBoundsException</code>: Check if the array index is
-                    less than the array length
+                  <li><code class="language-text">ArrayIndexOutOfBoundsException</code> checks if the array index is
+                    less than the array length.
                     <div class="gatsby-highlight" data-language="java">
                       <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">,</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">)</span>
@@ -804,9 +804,9 @@
                       </path>
                     </svg></a>Class <code class="language-text">Error</code></h2>
                 <p>An instance of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html"><strong><code
-                        class="language-text">Error</code></strong></a> indicates a serious problem that a reasonable
+                        class="language-text">Error</code></strong></a> indicates a serious problem that an
                   application <strong>should not</strong> try to catch.</p>
-                <p>Most such errors are abnormal conditions:</p>
+                <p>Most such errors are abnormal conditions.</p>
                 <ul>
                   <li><code class="language-text">OutOfMemoryError</code>: thrown when there is insufficient space to
                     allocate an object in the Java heap</li>

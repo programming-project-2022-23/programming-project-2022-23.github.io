@@ -863,10 +863,10 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
                 </div>
                 <p>It must have exactly one <strong><code class="language-text">try</code></strong> block.</p>
                 <p>It may have zero or more <strong><code class="language-text">catch</code></strong> blocks.</p>
-                <p>It may at most one <strong><code class="language-text">finally</code></strong> block.</p>
+                <p>It may have at most one <strong><code class="language-text">finally</code></strong> block.</p>
                 <p>However, it must either have a <strong><code class="language-text">catch</code></strong> or a
                   <strong><code class="language-text">finally</code></strong> block.</p>
-                <p>Here is how we can add exception handlers to our previous program:</p>
+                <p>Here is how we can add exception handlers to our previous program.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">InputMismatchException</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
@@ -921,7 +921,7 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
 <span class="token punctuation">}</span></code></pre>
                 </div>
                 <p>If an exception occurs within the <code class="language-text">try</code> block, it will be first
-                  handed to its associated <code class="language-text">catch</code> or <code
+                  passed to its <code class="language-text">catch</code> black and then to its <code
                     class="language-text">finally</code> block.</p>
                 <p><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/try.html">Source</a></p>
                 <h2 id="the-catch-block" style="position:relative;"><a href="#the-catch-block"
@@ -934,23 +934,23 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
                 <p>A <code class="language-text">catch</code> block is preceded by a <code
                     class="language-text">try</code> block or another <code class="language-text">catch</code> block.
                 </p>
-                <p>Here is an example:</p>
+                <p>Here is an example.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// ...</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
                 <p>A <code class="language-text">catch</code> block matches a thrown exception if it is of the type
-                  defined in block or a subtype of it.
-                  This means that we can write a <code class="language-text">catch</code> block that matches all by
-                  doing:</p>
+                  defined in block or is a subtype of it.
+                  This means that we can write a <code class="language-text">catch</code> 
+                  block that matches all possible exceptions by making it as general as possible.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// ...</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>We can declare multiple <code class="language-text">catch</code> blocks to handle exception types
-                  differently:</p>
+                <p>Alternatively, we can declare multiple <code class="language-text">catch</code> blocks to handle exception types
+                  differently.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InputMismatchException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// ...</span>
@@ -959,14 +959,14 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
   <span class="token comment">// ...</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>Or we can catch several specific exception types in a single <code class="language-text">catch</code>
-                  block:</p>
+                <p>Another option is catching several specific exception types in a single <code class="language-text">catch</code>
+                  block.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> <span class="token operator">|</span> <span class="token class-name">InputMismatchException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// ...</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>Here is how our previous example would look like:</p>
+                <p>Here is how our previous example would look like.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">InputMismatchException</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
@@ -1026,13 +1026,14 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
                 <p>The <code class="language-text">finally</code> block always executes after a <code
                     class="language-text">try</code> block is executed, which ensures that it is executed even if an
                   unexpected exception occurs.</p>
-                <p>The <code class="language-text">finally</code> block allows programmers to avoid having cleanup code
+                <p>The <code class="language-text">finally</code> block helps to makes sure that a cleanup 
+                  code segment is always executed, and not  
                   accidentally bypassed by a <code class="language-text">return</code>, <code
-                    class="language-text">continue</code>, or <code class="language-text">break</code>. Thus, putting
-                  cleanup code in a <code class="language-text">finally</code> block is always a good practice, even
+                    class="language-text">continue</code>, or <code class="language-text">break</code>. Thus, 
+                    using  a <code class="language-text">finally</code> block is always a good practice, even
                   when no exceptions are anticipated.</p>
                 <blockquote>
-                  <p>Note: The finally block may not execute if the JVM exits while the try or catch code is being
+                  <p>The finally block may, however, not execute if the JVM exits while the try or catch code is being
                     executed.</p>
                 </blockquote>
                 <p>Let us observe the how the following code is executed.</p>
@@ -1072,7 +1073,7 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>Now, let us add a finally block to our previous example:</p>
+                <p>Now, let us add a finally block to our previous example.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">InputMismatchException</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
@@ -1128,7 +1129,7 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
                     </svg></a>Do we really need the <code class="language-text">finally</code> block?</h2>
                 <p>An actual <a
                     href="https://stackoverflow.com/questions/3861522/do-you-really-need-the-finally-block">question</a>
-                  from Stackoverflow:</p>
+                  from Stackoverflow.</p>
                 <blockquote>
                   <p>There are 3 permutations of a try...catch...finally block in java.</p>
                   <ol>
@@ -1142,14 +1143,14 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
                 </blockquote>
                 <p>Some appropriate answers to this questions are:</p>
                 <ol>
-                  <li>Exceptions are for actual exceptional situations:
+                  <li>Exceptions are for actual exceptional situations.
                     <ul>
                       <li>You should not assume that the execution of your code will always continue after an execution
                         is thrown.</li>
                       <li>We usually don't want our applications to swallow errors.</li>
                     </ul>
                   </li>
-                  <li>You may return on the catch block and the finally block will still be executed:
+                  <li>You may return on the catch block and the finally block will still be executed.
                     <div class="gatsby-highlight" data-language="java">
                       <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">double</span> p <span class="token operator">=</span> <span class="token number">1.0D</span><span class="token punctuation">;</span>
@@ -1181,12 +1182,12 @@ Finally</code></pre>
                       </path>
                     </svg></a>Exercise 2: Using <code class="language-text">try-catch-finally</code></h2>
                 <ul>
-                  <li>Write a main method with two try-catch-finally blocks:
+                  <li>Write a main method with two try-catch-finally blocks.
                     <ul>
-                      <li>In the first try block, throw an exception</li>
-                      <li>In the second try block, do not throw an exception</li>
+                      <li>In the first try block, throw an exception.</li>
+                      <li>In the second try block, do not throw an exception.</li>
                       <li>In each <code class="language-text">try</code>, <code class="language-text">catch</code>, and
-                        <code class="language-text">finally</code> block print out something in the console</li>
+                        <code class="language-text">finally</code> block print out a message in the console.</li>
                     </ul>
                   </li>
                 </ul>
@@ -1200,7 +1201,7 @@ Finally</code></pre>
                         d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
                       </path>
                     </svg></a>Try-with-resources</h2>
-                <p>The code below uses the try-with-resources statement:</p>
+                <p>The code below uses the try-with-resources statement.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">FileWriter</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span><span class="token punctuation">;</span>
@@ -1222,8 +1223,8 @@ Finally</code></pre>
 
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>It may substitute the <code class="language-text">finally</code> block in many occasions.</p>
-                <p>To use it, however, the resource being open must implement the <a
+                <p>Such an expression can often be used instead of a <code class="language-text">finally</code> block.</p>
+                <p>However, the opened resource must implement the <a
                     href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html"><strong><code
                         class="language-text">AutoCloseable</code></strong></a> interface.</p>
                 <!-- 
