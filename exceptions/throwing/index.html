@@ -706,10 +706,10 @@
               <h1>5.4. Throwing Exceptions</h1>
               <div>
                 <p>Before you can catch an exception, some code somewhere must throw one.</p>
-                <p>Any code can throw an exception:</p>
+                <p>Any code can throw an exception. This can be</p>
                 <ul>
-                  <li>your code</li>
-                  <li>code from a package written by someone (e.g. the packages that come with the Java platform), or
+                  <li>your code, </li>
+                  <li>code from a package, e.g. those that come with the Java platform, or
                   </li>
                   <li>the Java runtime environment.</li>
                 </ul>
@@ -727,7 +727,7 @@
                   object.</p>
                 <p>Throwable objects are instances of any subclass of the <code class="language-text">Throwable</code>
                   class.</p>
-                <p>Here's an example of a throw statement:</p>
+                <p>Here's an example of a throw statement.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre
                     class="language-java"><code class="language-java"><span class="token keyword">throw</span> someThrowableObject<span class="token punctuation">;</span></code></pre>
@@ -750,10 +750,10 @@
   <span class="token keyword">return</span> obj<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>The <code class="language-text">pop()</code> method checks to see whether any elements are on the
+                <p>The <code class="language-text">pop()</code> method checks to see if there is any element on the
                   stack.</p>
-                <p>If the stack is empty (its <code class="language-text">size</code> is equal to <code
-                    class="language-text">0</code>), <code class="language-text">pop()</code> instantiates a new <code
+                <p>If the stack is empty, that is, its <code class="language-text">size</code> is equal to <code
+                    class="language-text">0</code>, <code class="language-text">pop()</code> instantiates a new <code
                     class="language-text">EmptyStackException</code> object and throws it.</p>
                 <p>Note that the declaration of the <code class="language-text">pop()</code> method does not contain a
                   <code class="language-text">throws</code> clause because <code
@@ -768,9 +768,9 @@
                       </path>
                     </svg></a>Chained exceptions</h2>
                 <p>An application often responds to an exception by throwing another exception. In effect, the first
-                  exception causes the second exception. It can be very helpful to know when one exception causes
+                  exception causes the second exception. It is helpful to know when one exception causes
                   another.</p>
-                <p><strong>Chained exceptions</strong> help us do that!</p>
+                <p><strong>Chained exceptions</strong> allow us to do that!</p>
                 <p>The following example shows how to use a chained exception.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
@@ -780,9 +780,9 @@
 <span class="token punctuation">}</span></code></pre>
                 </div>
                 <p>In this example, when an <code class="language-text">IOException</code> is caught, a new <code
-                    class="language-text">Exception</code> exception is created with the original cause attached and the
+                    class="language-text">Exception</code>  is created with the original cause attached and the
                   chain of exceptions is thrown up to the next higher level exception handler.</p>
-                <p>Here is a more extensive example of exception chaining:</p>
+                <p>Here is a more extensive example of exception chaining.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
 
@@ -816,7 +816,7 @@
 
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>Note that the we will see the chained exceptions in the stack trace:</p>
+                <p>Note that we will then see the chained exceptions in the stack trace.</p>
                 <div class="gatsby-highlight" data-language="console">
                   <pre class="language-console"><code class="language-console">java.lang.Exception: Exception thrown in method1()
 	at UsingChainedExceptions.method1(UsingChainedExceptions.java:15)
@@ -833,13 +833,13 @@ Caused by: java.lang.Exception: Exception thrown in method3()
                 <p>The following are the methods and constructors in <code class="language-text">Throwable</code> that
                   support chained exceptions.</p>
                 <ul>
-                  <li><code class="language-text">Throwable getCause()</code>: returns the <code
+                  <li><code class="language-text">Throwable getCause()</code> returns the <code
                       class="language-text">Throwable</code> that caused the current <code
                       class="language-text">Throwable</code>.</li>
-                  <li><code class="language-text">Throwable initCause(Throwable)</code>: sets the current <code
+                  <li><code class="language-text">Throwable initCause(Throwable)</code> sets the current <code
                       class="language-text">Throwable</code>'s cause.</li>
-                  <li><code class="language-text">Throwable(Throwable)</code>: builds a new <code
-                      class="language-text">Throwable</code> ands sets its cause.</li>
+                  <li><code class="language-text">Throwable(Throwable)</code> builds a new <code
+                      class="language-text">Throwable</code> and sets its cause.</li>
                 </ul>
               </div>
             </div>
