@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="generator" content="Gatsby 4.7.2" />
+  <style data-href="/styles.afba4c28f3a3c2056c1f.css" data-identity="gatsby-global-css">
+    * {
+      border: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      margin: 0;
+      padding: 0;
+      text-decoration: none
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      border-bottom: 1px solid #d8dee4;
+      font-weight: 600;
+      line-height: 1.25;
+      padding-bottom: .3em
+    }
+
+    .page-banner-container {
+      margin-bottom: 24px;
+      padding-bottom: 33px
+    }
+
+    h1 {
+      font-size: 1.9em;
+      margin: 24px 0
+    }
+
+    h2 {
+      margin: 36px 0 20px
+    }
+
+    h3,
+    h4 {
+      margin: 30px 0 10px
+    }
+
+    a {
+      color: #007be4;
+      font-weight: 600;
+      transition: color .25s ease
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    body,
+    html {
+      height: 100%
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: min(1400px, 90%)
+    }
+
+    .body,
+    .footer,
+    .header {
+      align-items: stretch;
+      display: flex;
+      gap: 18px;
+      justify-content: space-between
+    }
+
+    .footer,
+    .footer a,
+    .header,
+    .header a {
+      color: #fff
+    }
+
+    .body-content {
+      color: #24292f
+    }
+
+    .body-content,
+    .body-navbar,
+    .footer-content,
+    .footer-navbar,
+    .header-content,
+    .header-navbar {
+      padding: 24px 36px
+    }
+
+    .footer-content,
+    .footer-navbar,
+    .header-content,
+    .header-navbar {
+      background-color: #24292f;
+      border: 1px solid #24292f
+    }
+
+    .header-content,
+    .header-navbar {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px
+    }
+
+    .footer-content,
+    .footer-navbar {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px
+    }
+
+    .body-navbar,
+    .footer-navbar,
+    .header-navbar {
+      flex: 0 0 auto;
+      width: 200px
+    }
+
+    .body-content,
+    .footer-content,
+    .header-content {
+      flex: 1 1 auto;
+      min-width: 200px
+    }
+
+    .body-content,
+    .body-navbar {
+      border-left: 1px solid #d8dee4;
+      border-right: 1px solid #d8dee4;
+      min-height: 600px
+    }
+
+    .footer-content,
+    .header-content {
+      display: flex;
+      justify-content: space-between
+    }
+
+    .body-navbar-inner {
+      gap: 18px
+    }
+
+    .body-navbar-inner,
+    .navbar-module-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between
+    }
+
+    .navbar-module-container {
+      gap: 1px
+    }
+
+    .module-link {
+      font-weight: 900
+    }
+
+    .module-link,
+    .section-link {
+      color: #24292f
+    }
+
+    .section-link {
+      font-weight: 500;
+      padding: .2em .4em
+    }
+
+    .active-section-link {
+      background-color: rgba(175, 184, 193, .2);
+      border-radius: 6px
+    }
+
+    .body-content>h1:first-child {
+      margin-top: 0
+    }
+
+    .content-container {
+      flex-grow: 1
+    }
+
+    .container .body-content,
+    .subheader {
+      padding: 24px 36px
+    }
+
+    .subheader {
+      border: 1px solid #d8dee4
+    }
+
+    .course {
+      color: #24292f;
+      font-size: 1em
+    }
+
+    .module {
+      font-size: 2.5em;
+      font-weight: 800
+    }
+
+    .body-content blockquote,
+    .body-content li,
+    .body-content ol,
+    .body-content p,
+    .body-content table,
+    .body-content ul {
+      font-weight: 400
+    }
+
+    .body-content a,
+    .body-content blockquote,
+    .body-content li,
+    .body-content ol,
+    .body-content p,
+    .body-content table,
+    .body-content ul {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      margin-top: 0
+    }
+
+    .body-content li ul {
+      margin: 0
+    }
+
+    .body-content ol,
+    ul {
+      padding-left: 30px
+    }
+
+    .body-content li {
+      margin-bottom: 0
+    }
+
+    .body-content li+li {
+      margin-top: .25em
+    }
+
+    .body-content code.language-text {
+      background-color: rgba(175, 184, 193, .2);
+      border-radius: 6px;
+      font-family: Menlo, Monaco, Courier New, Courier, monospace;
+      font-size: 85%;
+      margin: 0;
+      padding: .2em .4em
+    }
+
+    .body-content blockquote {
+      background-color: #f6f8fa;
+      border-left: .4rem solid rgba(46, 46, 46, .1);
+      font-style: italic;
+      padding: .8rem .8rem 1px
+    }
+
+    .body-content blockquote * {
+      color: #57606a
+    }
+
+    .body-content img {
+      max-width: 600px;
+      width: 100%
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid #d0d7de;
+      border-collapse: collapse
+    }
+
+    td,
+    th {
+      padding: 6px 13px
+    }
+
+    a code[class*=language-] {
+      color: #007be4
+    }
+
+    code[class*=language-],
+    pre[class*=language-] {
+      word-wrap: normal;
+      background: none;
+      color: #000;
+      font-family: Menlo, Monaco, Courier New, Courier, monospace;
+      font-size: 95%;
+      -webkit-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+      line-height: 1.5;
+      -o-tab-size: 4;
+      tab-size: 4;
+      text-align: left;
+      text-shadow: 0 1px #fff;
+      white-space: pre;
+      word-break: normal;
+      word-spacing: normal
+    }
+
+    code[class*=language-] ::selection,
+    code[class*=language-]::selection,
+    pre[class*=language-] ::selection,
+    pre[class*=language-]::selection {
+      background: #b3d4fc;
+      text-shadow: none
+    }
+
+    @media print {
+
+      code[class*=language-],
+      pre[class*=language-] {
+        text-shadow: none
+      }
+    }
+
+    pre[class*=language-] {
+      margin: 1.5em 0;
+      overflow: auto;
+      padding: 1em
+    }
+
+    :not(pre)>code[class*=language-],
+    pre[class*=language-] {
+      background-color: #f6f8fa;
+      border-radius: 6px
+    }
+
+    :not(pre)>code[class*=language-] {
+      border-radius: .3em;
+      padding: .1em;
+      white-space: normal
+    }
+
+    .token.cdata,
+    .token.comment,
+    .token.doctype,
+    .token.prolog {
+      color: #708090
+    }
+
+    .token.punctuation {
+      color: #999
+    }
+
+    .token.namespace {
+      opacity: .7
+    }
+
+    .token.boolean,
+    .token.constant,
+    .token.deleted,
+    .token.number,
+    .token.property,
+    .token.symbol,
+    .token.tag {
+      color: #905
+    }
+
+    .token.attr-name,
+    .token.builtin,
+    .token.char,
+    .token.inserted,
+    .token.selector,
+    .token.string {
+      color: #690
+    }
+
+    .language-css .token.string,
+    .style .token.string,
+    .token.entity,
+    .token.operator,
+    .token.url {
+      background: hsla(0, 0%, 100%, .5);
+      color: #9a6e3a
+    }
+
+    .token.atrule,
+    .token.attr-value,
+    .token.keyword {
+      color: #07a
+    }
+
+    .token.class-name,
+    .token.function {
+      color: #dd4a68
+    }
+
+    .token.important,
+    .token.regex,
+    .token.variable {
+      color: #e90
+    }
+
+    .token.bold,
+    .token.important {
+      font-weight: 700
+    }
+
+    .token.italic {
+      font-style: italic
+    }
+
+    .token.entity {
+      cursor: help
+    }
+
+    .command-line-prompt {
+      border-right: 1px solid #999;
+      display: block;
+      float: left;
+      font-size: 100%;
+      letter-spacing: -1px;
+      margin-right: 1em;
+      pointer-events: none;
+      text-align: right;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .command-line-prompt>span:before {
+      content: " ";
+      display: block;
+      opacity: .4;
+      padding-right: .8em
+    }
+
+    .command-line-prompt>span[data-user]:before {
+      content: "[" attr(data-user) "@" attr(data-host) "] $"
+    }
+
+    .command-line-prompt>span[data-user=root]:before {
+      content: "[" attr(data-user) "@" attr(data-host) "] #"
+    }
+
+    .command-line-prompt>span[data-prompt]:before {
+      content: attr(data-prompt)
+    }
+
+    .command-line-prompt>span[data-continuation-prompt]:before {
+      content: attr(data-continuation-prompt)
+    }
+
+    .command-line span.token.output {
+      opacity: .7
+    }
+  </style>
+  <style>
+    .gatsby-image-wrapper {
+      position: relative;
+      overflow: hidden
+    }
+
+    .gatsby-image-wrapper picture.object-fit-polyfill {
+      position: static !important
+    }
+
+    .gatsby-image-wrapper img {
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      margin: 0;
+      max-width: none;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      object-fit: cover
+    }
+
+    .gatsby-image-wrapper [data-main-image] {
+      opacity: 0;
+      transform: translateZ(0);
+      transition: opacity .25s linear;
+      will-change: opacity
+    }
+
+    .gatsby-image-wrapper-constrained {
+      display: inline-block;
+      vertical-align: top
+    }
+  </style><noscript>
+    <style>
+      .gatsby-image-wrapper noscript [data-main-image] {
+        opacity: 1 !important
+      }
+
+      .gatsby-image-wrapper [data-placeholder-image] {
+        opacity: 0 !important
+      }
+    </style>
+  </noscript>
+  <script
+    type="module">const e = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype; e && document.body.addEventListener("load", (function (e) { if (void 0 === e.target.dataset.mainImage) return; if (void 0 === e.target.dataset.gatsbyImageSsr) return; const t = e.target; let a = null, n = t; for (; null === a && n;)void 0 !== n.parentNode.dataset.gatsbyImageWrapper && (a = n.parentNode), n = n.parentNode; const o = a.querySelector("[data-placeholder-image]"), r = new Image; r.src = t.currentSrc, r.decode().catch((() => { })).then((() => { t.style.opacity = 1, o && (o.style.opacity = 0, o.style.transition = "opacity 500ms linear") })) }), !0);</script>
+  <style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function () {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script>
+  <link as="script" rel="preload" href="/webpack-runtime-af5602edea791ae856a0.js" />
+  <link as="script" rel="preload" href="/framework-675a07cb9aff63570c38.js" />
+  <link as="script" rel="preload" href="/app-28fa38d494eb64b1e03c.js" />
+  <link as="script" rel="preload" href="/component---src-templates-template-js-aadc16a91c2ce3d4e3c3.js" />
+  <link as="fetch" rel="preload" href="/page-data/exceptions/exceptions/page-data.json" crossorigin="anonymous" />
+  <link as="fetch" rel="preload" href="/page-data/sq/d/800307450.json" crossorigin="anonymous" />
+  <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div id="___gatsby">
+    <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+      <div class="container">
+        <div class="header">
+          <div class="header-navbar"><a href="/">Home</a></div>
+          <div class="header-content"><a href="/java/memory-model">Previous</a><a href="/exceptions/throwables">Next</a>
+          </div>
+        </div>
+        <div class="body">
+          <div class="body-navbar">
+            <div class="body-navbar-inner">
+              <div class="navbar-module-container"><span class="module-link">1. Introduction</span><a
+                  class="section-link" href="/introduction/structure">1.1. Course Structure</a><a class="section-link"
+                  href="/introduction/goals">1.2. Learning Goals</a><a class="section-link"
+                  href="/introduction/lecturers">1.3. Course Lecturers</a><a class="section-link"
+                  href="/introduction/syllabus">1.4. Topics</a><a class="section-link"
+                  href="/introduction/bibliography">1.5. Bibliography</a><a class="section-link"
+                  href="/introduction/tools">1.6. Tools</a><a class="section-link" href="/introduction/evaluation">1.7.
+                  Evaluation</a><a class="section-link" href="/introduction/agreements">1.8. Agreements</a></div>
+              <div class="navbar-module-container"><span class="module-link">2. Course Project</span><a
+                  class="section-link" href="/project/scope">2.1. Scope</a><a class="section-link"
+                  href="/project/rules">2.2. Rules of the Game</a><a class="section-link" href="/project/dates">2.3.
+                  Important Dates</a><a class="section-link" href="/project/requirements">2.4. Requirements</a><a
+                  class="section-link" href="/project/tips">2.5. Tips</a></div>
+              <div class="navbar-module-container"><span class="module-link">3. Git 101</span><a class="section-link"
+                  href="/git/introduction">3.1. Introduction</a><a class="section-link" href="/git/install">3.2.
+                  Installing Git</a><a class="section-link" href="/git/shell">3.3. Basic shell commands</a><a
+                  class="section-link" href="/git/commands">3.4. Git commands</a><a class="section-link"
+                  href="/git/gitignore">3.5. Ignoring files</a><a class="section-link" href="/git/branches">3.6.
+                  Branches</a><a class="section-link" href="/git/remotes">3.7. Remote repositories</a></div>
+              <div class="navbar-module-container"><span class="module-link">4. How Java Works</span><a
+                  class="section-link" href="/java/introduction">4.1. Introduction</a><a class="section-link"
+                  href="/java/architecture">4.2. Java Architecture</a><a class="section-link"
+                  href="/java/variables-parameters">4.3. Variables and Parameters</a><a class="section-link"
+                  href="/java/memory-model">4.4. Java Memory Model</a></div>
+              <div class="navbar-module-container"><span class="module-link">5. Exception Handling</span><a
+                  aria-current="page" class="section-link active-section-link" href="/exceptions/exceptions">5.1.
+                  Introduction</a><a class="section-link" href="/exceptions/throwables">5.2. Exception Types</a><a
+                  class="section-link" href="/exceptions/declaring">5.3. Declaring Exceptions Thrown by Methods</a><a
+                  class="section-link" href="/exceptions/throwing">5.4. Throwing Exceptions</a><a class="section-link"
+                  href="/exceptions/custom">5.5. Custom Exceptions</a><a class="section-link"
+                  href="/exceptions/stack-trace">5.6. Accessing the Stack Trace</a></div>
+              <div class="navbar-module-container"><span class="module-link">6. Inheritance</span><a
+                  class="section-link" href="/inheritance/introduction">6.1. Introduction</a><a class="section-link"
+                  href="/inheritance/interfaces">6.2. Interfaces</a><a class="section-link"
+                  href="/inheritance/overriding">6.3. Method Overriding</a><a class="section-link"
+                  href="/inheritance/multiple-inheritance">6.4. Multiple Inheritance</a><a class="section-link"
+                  href="/inheritance/abstract">6.5. Abstract Classes</a><a class="section-link"
+                  href="/inheritance/overloading">6.6. Method Overloading</a><a class="section-link"
+                  href="/inheritance/polymorphism">6.7. Polymorphism</a><a class="section-link"
+                  href="/inheritance/object">6.8. The Object Class</a><a class="section-link"
+                  href="/inheritance/casting">6.9. Casting</a></div>
+              <div class="navbar-module-container"><span class="module-link">7. Generic Programming</span><a
+                  class="section-link" href="/generics/introduction">7.1. Introduction</a><a class="section-link"
+                  href="/generics/methods">7.2. Generic Methods</a><a class="section-link"
+                  href="/generics/type-parameters">7.3. Bounded and Unbounded Type Parameters</a><a class="section-link"
+                  href="/generics/classes">7.4. Generic Types</a></div>
+              <div class="navbar-module-container"><span class="module-link">8. Arrays</span><a class="section-link"
+                  href="/arrays/one-dimensional">8.1. One Dimensional Arrays</a><a class="section-link"
+                  href="/arrays/multidimensional">8.2. Multidimensional Arrays</a><a class="section-link"
+                  href="/arrays/arrays-class">8.3. The Arrays class</a><a class="section-link"
+                  href="/arrays/varargs">8.4. Varags</a><a class="section-link" href="/arrays/limitations">8.5.
+                  Limitations</a></div>
+              <div class="navbar-module-container"><span class="module-link">9. Java Collections Framework</span><a
+                  class="section-link" href="/collections/introduction">9.1. Introduction</a><a class="section-link"
+                  href="/collections/collection">9.2. The Collection Interface</a><a class="section-link"
+                  href="/collections/list">9.3. Lists</a><a class="section-link" href="/collections/set">9.4. Sets</a><a
+                  class="section-link" href="/collections/queue">9.5. Queues</a><a class="section-link"
+                  href="/collections/collections-class">9.6. The Collections Class</a><a class="section-link"
+                  href="/collections/map">9.7. Maps</a><a class="section-link" href="/collections/choosing">9.8.
+                  Choosing My Collection</a></div>
+              <div class="navbar-module-container"><span class="module-link">10. Lambda Expressions</span><a
+                  class="section-link" href="/lambdas/introduction">10.1. Introduction</a><a class="section-link"
+                  href="/lambdas/what-is">10.2. What is a Lambda Expression?</a><a class="section-link"
+                  href="/lambdas/functional-interfaces">10.3. Functional Interfaces</a><a class="section-link"
+                  href="/lambdas/local-variables">10.4. Local Variables in Lambda Expressions</a><a class="section-link"
+                  href="/lambdas/standard">10.5. Standard Functional Interfaces</a><a class="section-link"
+                  href="/lambdas/sorting">10.6. Sorting with Lambdas</a></div>
+              <div class="navbar-module-container"><span class="module-link">11. Streams</span><a class="section-link"
+                  href="/streams/introduction">11.1. Introduction</a><a class="section-link"
+                  href="/streams/pipelines">11.2. Pipelines</a><a class="section-link" href="/streams/int-stream">11.3.
+                  IntStream</a><a class="section-link" href="/streams/optionals">11.4. Optionals</a><a
+                  class="section-link" href="/streams/operations">11.5. Operations</a></div>
+              <div class="navbar-module-container"><span class="module-link">12. Maven</span><a class="section-link"
+                  href="/maven/introduction">12.1. Introduction</a><a class="section-link" href="/maven/compiling">12.2.
+                  Compiling Java</a><a class="section-link" href="/maven/getting-started">12.3. Getting Started</a><a
+                  class="section-link" href="/maven/coordinates">12.4. Coordinates</a><a class="section-link"
+                  href="/maven/repositories">12.5. Repositories</a><a class="section-link" href="/maven/pom">12.6.
+                  Project Object Model</a><a class="section-link" href="/maven/dependencies">12.7. Dependencies</a><a
+                  class="section-link" href="/maven/layout">12.8. Standard Directory Layout</a><a class="section-link"
+                  href="/maven/lifecycle">12.9. Lifecycles and Phases</a><a class="section-link"
+                  href="/maven/wrapper">12.10. Wrapper</a><a class="section-link" href="/maven/archetypes">12.11.
+                  Archetypes</a><a class="section-link" href="/maven/maven-git">12.12. Maven and Git</a><a
+                  class="section-link" href="/maven/plugins">12.13. Common Maven plugins</a></div>
+              <div class="navbar-module-container"><span class="module-link">13. Testing</span><a class="section-link"
+                  href="/testing/introduction">13.1. Introduction</a><a class="section-link"
+                  href="/testing/getting-started">13.2. Getting Started with JUnit 5</a><a class="section-link"
+                  href="/testing/junit-5-basics">13.3. Basics of JUnit 5</a><a class="section-link"
+                  href="/testing/hooks">13.4. JUnit Lifecycle API</a><a class="section-link"
+                  href="/testing/exceptions">13.5. Expected Exceptions</a><a class="section-link"
+                  href="/testing/timeouts">13.6. Timeouts</a><a class="section-link" href="/testing/nested">13.7. Nested
+                  Tests</a><a class="section-link" href="/testing/repeated">13.8. Repeating Tests</a><a
+                  class="section-link" href="/testing/assertion-libraries">13.9. Third-party Assertion Libraries</a><a
+                  class="section-link" href="/testing/first">13.10. FIRST Properties of Good Tests</a><a
+                  class="section-link" href="/testing/right-bicep">13.11. What to Test: The Right-BICEP</a><a
+                  class="section-link" href="/testing/correct">13.12. Boundary Conditions: The CORRECT Way</a></div>
+              <div class="navbar-module-container"><span class="module-link">14. Regular Expressions</span><a
+                  class="section-link" href="/regex/string-manipulation">14.1. String Manipulation</a><a
+                  class="section-link" href="/regex/writing">14.2. Writing Regular Expressions</a><a
+                  class="section-link" href="/regex/regex-string">14.3. Using Regular Expressions in String
+                  Methods</a><a class="section-link" href="/regex/api">14.4. Regex API</a></div>
+              <div class="navbar-module-container"><span class="module-link">15. Design Patterns</span><a
+                  class="section-link" href="/design-patterns/instructions">15.1. Instructions</a><a
+                  class="section-link" href="/design-patterns/introduction">15.2. What is a Design Pattern?</a><a
+                  class="section-link" href="/design-patterns/gof">15.3. Gang of Four Design Patterns</a></div>
+              <div class="navbar-module-container"><span class="module-link">16. I/O</span><a class="section-link"
+                  href="/io/file-manipulation">16.1. File manipulation</a><a class="section-link"
+                  href="/io/streams">16.2. I/O Streams</a><a class="section-link" href="/io/reading-file-reader">16.3.
+                  Reading: FileReader and BufferedReader</a><a class="section-link" href="/io/reading-scanner">16.4.
+                  Reading: Scanner</a><a class="section-link" href="/io/reading-files">16.5. Reading: Files</a><a
+                  class="section-link" href="/io/writing">16.6. Writing Text Files</a></div>
+              <div class="navbar-module-container"><span class="module-link">17. Serialization</span><a
+                  class="section-link" href="/serialization/introduction">17.1. Introduction</a><a class="section-link"
+                  href="/serialization/csv">17.2. CSV</a><a class="section-link" href="/serialization/json">17.3.
+                  JSON</a><a class="section-link" href="/serialization/jackson">17.4. Reading and writing JSON with
+                  Jackson</a><a class="section-link" href="/serialization/serializable">17.5. Binary serialization</a>
+              </div>
+              <div class="navbar-module-container"><span class="module-link">18. Multithreading</span><a
+                  class="section-link" href="/multithreading/concurrency">18.1. Concurrency</a><a class="section-link"
+                  href="/multithreading/processes-threads">18.2. Processes &amp; Threads</a><a class="section-link"
+                  href="/multithreading/multithreading-java">18.3. Multithreading in Java</a><a class="section-link"
+                  href="/multithreading/synchronization">18.4. Thread Synchronization</a><a class="section-link"
+                  href="/multithreading/signaling">18.5. Thread Signaling</a></div>
+            </div>
+          </div>
+          <div class="body-content">
+            <div class="body-content-module-title">
+              <div class="module">5. Exception Handling</div>
+              <div class="course">Programming Project 2021/22</div>
+            </div>
+            <div class="body-content-data">
+              <h1>5.1. Introduction</h1>
+              <div>
+                <h2 id="learning-goals" style="position:relative;"><a href="#learning-goals"
+                    aria-label="learning goals permalink" class="anchor before"><svg aria-hidden="true"
+                      focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>Learning goals</h2>
+                <p>In this module, you will learn about:</p>
+                <ol>
+                  <li>Exceptional occurrences in our programs</li>
+                  <li><code class="language-text">Throwable</code>, <code class="language-text">Exception</code>, <code
+                      class="language-text">RuntimeException</code>, and <code class="language-text">Error</code></li>
+                  <li>Handling exceptions using <code class="language-text">try-catch</code></li>
+                  <li>Declaring exceptions</li>
+                  <li>Creating custom exceptions</li>
+                </ol>
+                <h2 id="introduction" style="position:relative;"><a href="#introduction"
+                    aria-label="introduction permalink" class="anchor before"><svg aria-hidden="true" focusable="false"
+                      height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>Introduction</h2>
+                <p>Consider the following program:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">Scanner</span> scanner <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer numerator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">int</span> numerator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer denominator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">int</span> denominator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">int</span> quotient <span class="token operator">=</span> <span class="token function">quotient</span><span class="token punctuation">(</span>numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%nResult: %d / %d = %d%n"</span><span class="token punctuation">,</span> numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">,</span> quotient<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">quotient</span><span class="token punctuation">(</span><span class="token keyword">int</span> numerator<span class="token punctuation">,</span> <span class="token keyword">int</span> denominator<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> numerator <span class="token operator">/</span> denominator<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>What will happen if we input <code class="language-text">0</code> as the <code
+                    class="language-text">denominator</code>?</p>
+                <p>What if you input a <code class="language-text">String</code> instead of an <code
+                    class="language-text">int</code>?</p>
+                <p>Our program will throw <strong>exceptions</strong>!</p>
+                <h2 id="what-is-an-exception" style="position:relative;"><a href="#what-is-an-exception"
+                    aria-label="what is an exception permalink" class="anchor before"><svg aria-hidden="true"
+                      focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>What is an exception?</h2>
+                <p>An exception is <em>an event, which occurs during the execution of a program, that disrupts the
+                    normal flow of the program's instructions</em>.</p>
+                <p>Some examples include:</p>
+                <ul>
+                  <li>Integer division by zero</li>
+                  <li>Array access out of bound</li>
+                  <li>Trying to access a field via a null pointer</li>
+                </ul>
+                <p>An exception is an object that contains:</p>
+                <ul>
+                  <li>Information about the error, including its type</li>
+                  <li>The state of the program when it occurred</li>
+                  <li>Optionally, other custom information</li>
+                </ul>
+                <p>The term exception is shorthand for the phrase <em>"exceptional event"</em></p>
+                <p><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html">Source</a></p>
+                <h2 id="what-happens-when-an-exception-occurs" style="position:relative;"><a
+                    href="#what-happens-when-an-exception-occurs"
+                    aria-label="what happens when an exception occurs permalink" class="anchor before"><svg
+                      aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>What happens when an exception occurs?</h2>
+                <p><strong>Process</strong>:</p>
+                <ol>
+                  <li>An exception occurs</li>
+                  <li>The method stops executing</li>
+                  <li>The method creates an exception object</li>
+                  <li>The methods hands the exception object off to the runtime system</li>
+                  <li>The runtime system searches the <em>call stack</em> for an <em>exception handler</em></li>
+                  <li>If the runtime system finds an appropriate exception handler, the exception is hand to it</li>
+                  <li>The exception handler starts to execute</li>
+                </ol>
+                <p>If no exception handler is found on step 6, the program prints the call stack to the console and
+                  terminates.</p>
+                <br />
+                <p><img src="/95d41cec0e97c8531847d18a041ed19d/exceptions-errorOccurs.gif" alt="exception-process"></p>
+                <p>In this context, we often use the following expressions:</p>
+                <ul>
+                  <li><strong>to throw an exception</strong>: refers to the actions of creating an exception object and
+                    handing it over to the runtime system.</li>
+                  <li><strong>to catch an exception"</strong>: refers to the actions of the runtime system handing over
+                    an exception to a piece of code that can handle it.</li>
+                </ul>
+                <h2 id="call-stack" style="position:relative;"><a href="#call-stack" aria-label="call stack permalink"
+                    class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1"
+                      viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>Call Stack</h2>
+                <p>The <strong>call stack</strong> is the ordered list of methods that had been called to get to the
+                  method where the exception occurred.</p>
+                <p>Here is a couple of console outputs that show us the call stack from exceptions thrown by our program
+                  above.</p>
+                <div class="gatsby-highlight" data-language="output">
+                  <pre class="language-output"><code class="language-output">Please enter an integer numerator: 100
+Please enter an integer denominator: 0
+Exception in thread &quot;main&quot; java.lang.ArithmeticException: / by zero
+	at DivideByZeroNoExceptionHandling.quotient(DivideByZeroNoExceptionHandling.java:7)
+	at DivideByZeroNoExceptionHandling.main(DivideByZeroNoExceptionHandling.java:19)</code></pre>
+                </div>
+                <div class="gatsby-highlight" data-language="output">
+                  <pre class="language-output"><code class="language-output">Please enter an integer numerator: a
+Exception in thread &quot;main&quot; java.util.InputMismatchException
+	at java.util.Scanner.throwFor(Scanner.java:864)
+	at java.util.Scanner.next(Scanner.java:1485)
+	at java.util.Scanner.nextInt(Scanner.java:2117)
+	at java.util.Scanner.nextInt(Scanner.java:2076)
+	at DivideByZeroNoExceptionHandling.main(DivideByZeroNoExceptionHandling.java:14)</code></pre>
+                </div>
+                <p>We can get the following information from the call stack:</p>
+                <ul>
+                  <li>The thread in which the exception occurred</li>
+                  <li>The method which threw the exception</li>
+                  <li>The exact line which threw the exception</li>
+                  <li>The ordered list of method calls at the moment the exception was thrown, either if it our class or
+                    someone else's</li>
+                </ul>
+                <p><strong>Tip:</strong> To understand what broke your code and discover how to fix it, start by looking
+                  at the first method you wrote within the call stack.</p>
+                <h2 id="exception-handlers" style="position:relative;"><a href="#exception-handlers"
+                    aria-label="exception handlers permalink" class="anchor before"><svg aria-hidden="true"
+                      focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>Exception handlers</h2>
+                <p>An <strong>exception handler</strong> is a block of code that can handle exceptions of one or more
+                  types.</p>
+                <p>The basic structure of an exception handler looks like this:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token comment">// The code we want to secure</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ExceptionType</span> exception<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// The code we want to execute if an exception of type ExceptionType is thrown</span>
+<span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+  <span class="token comment">// The code we want to execute regardless if an exception has been thrown or not</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>It must have exactly one <strong><code class="language-text">try</code></strong> block.</p>
+                <p>It may have zero or more <strong><code class="language-text">catch</code></strong> blocks.</p>
+                <p>It may at most one <strong><code class="language-text">finally</code></strong> block.</p>
+                <p>However, it must either have a <strong><code class="language-text">catch</code></strong> or a
+                  <strong><code class="language-text">finally</code></strong> block.</p>
+                <p>Here is how we can add exception handlers to our previous program:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">InputMismatchException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Scanner</span> scanner <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">boolean</span> continueLoop <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// determines if more input is needed</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>continueLoop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">try</span> <span class="token punctuation">{</span> <span class="token comment">// read two numbers and calculate quotient</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer numerator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> numerator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer denominator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> denominator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">int</span> quotient <span class="token operator">=</span> <span class="token function">quotient</span><span class="token punctuation">(</span>numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%nResult: %d / %d = %d%n"</span><span class="token punctuation">,</span> numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">,</span> quotient<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        continueLoop <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InputMismatchException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        scanner<span class="token punctuation">.</span><span class="token function">nextLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// discard input so we can try again</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"You must enter integers. Please try again.%n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Cannot divide by 0. Please try again.%n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">quotient</span><span class="token punctuation">(</span><span class="token keyword">int</span> numerator<span class="token punctuation">,</span> <span class="token keyword">int</span> denominator<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> numerator <span class="token operator">/</span> denominator<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <h2 id="the-try-block" style="position:relative;"><a href="#the-try-block"
+                    aria-label="the try block permalink" class="anchor before"><svg aria-hidden="true" focusable="false"
+                      height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>The <code class="language-text">try</code> block</h2>
+                <p>The first step in constructing an exception handler is to enclose the code that might throw an
+                  exception within a try block.</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer numerator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> numerator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>If an exception occurs within the <code class="language-text">try</code> block, it will be first
+                  handed to its associated <code class="language-text">catch</code> or <code
+                    class="language-text">finally</code> block.</p>
+                <p><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/try.html">Source</a></p>
+                <h2 id="the-catch-block" style="position:relative;"><a href="#the-catch-block"
+                    aria-label="the catch block permalink" class="anchor before"><svg aria-hidden="true"
+                      focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>The <code class="language-text">catch</code> block</h2>
+                <p>A <code class="language-text">catch</code> block is preceded by a <code
+                    class="language-text">try</code> block or another <code class="language-text">catch</code> block.
+                </p>
+                <p>Here is an example:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>A <code class="language-text">catch</code> block matches a thrown exception if it is of the type
+                  defined in block or a subtype of it.
+                  This means that we can write a <code class="language-text">catch</code> block that matches all by
+                  doing:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>We can declare multiple <code class="language-text">catch</code> blocks to handle exception types
+                  differently:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InputMismatchException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>Or we can catch several specific exception types in a single <code class="language-text">catch</code>
+                  block:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> <span class="token operator">|</span> <span class="token class-name">InputMismatchException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>Here is how our previous example would look like:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">InputMismatchException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Scanner</span> scanner <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">boolean</span> continueLoop <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// determines if more input is needed</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>continueLoop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">try</span> <span class="token punctuation">{</span> <span class="token comment">// read two numbers and calculate quotient</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer numerator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> numerator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer denominator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> denominator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">int</span> quotient <span class="token operator">=</span> <span class="token function">quotient</span><span class="token punctuation">(</span>numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%nResult: %d / %d = %d%n"</span><span class="token punctuation">,</span> numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">,</span> quotient<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        continueLoop <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> <span class="token operator">|</span> <span class="token class-name">InputMismatchException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        scanner<span class="token punctuation">.</span><span class="token function">nextLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// discard input so we can try again</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Either an ArithmeticException or an InputMismatchException was thrown. Please try again.%n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">quotient</span><span class="token punctuation">(</span><span class="token keyword">int</span> numerator<span class="token punctuation">,</span> <span class="token keyword">int</span> denominator<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> numerator <span class="token operator">/</span> denominator<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/catch.html">Source</a></p>
+                <h2 id="exercise-1-using-try-catch" style="position:relative;"><a href="#exercise-1-using-try-catch"
+                    aria-label="exercise 1 using try catch permalink" class="anchor before"><svg aria-hidden="true"
+                      focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>Exercise 1: Using <code class="language-text">try-catch</code></h2>
+                <ol>
+                  <li>Write a program that throws an ArrayIndexOutOfBoundsException.</li>
+                  <li>Change the previous program so that it will catch the thrown exception.</li>
+                </ol>
+                <p>You can find the solution to this exercise <a
+                    href="https://github.com/Programming-Project-2021-22/lecture-exceptions/tree/exercise-1">here</a>.
+                </p>
+                <h2 id="the-finally-block" style="position:relative;"><a href="#the-finally-block"
+                    aria-label="the finally block permalink" class="anchor before"><svg aria-hidden="true"
+                      focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>The <code class="language-text">finally</code> block</h2>
+                <p>The <code class="language-text">finally</code> block always executes after a <code
+                    class="language-text">try</code> block is executed, which ensures that it is executed even if an
+                  unexpected exception occurs.</p>
+                <p>The <code class="language-text">finally</code> block allows programmers to avoid having cleanup code
+                  accidentally bypassed by a <code class="language-text">return</code>, <code
+                    class="language-text">continue</code>, or <code class="language-text">break</code>. Thus, putting
+                  cleanup code in a <code class="language-text">finally</code> block is always a good practice, even
+                  when no exceptions are anticipated.</p>
+                <blockquote>
+                  <p>Note: The finally block may not execute if the JVM exits while the try or catch code is being
+                    executed.</p>
+                </blockquote>
+                <p>Let us observe the how the following code is executed.</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FinallyExample</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token function">throwException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Line after throwException() call"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Catch block in main()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">doesNotThrowException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">throwException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Try block in throwException()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Exception</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> exception<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Catch block in throwException()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">throw</span> exception<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Finally block in throwException()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">doesNotThrowException</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Try block in doesNotThrowException()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> exception<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Catch block in doesNotThrowException()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Finally block in doesNotThrowException()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"End of doesNotThrowException()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>Now, let us add a finally block to our previous example:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">InputMismatchException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Scanner</span> scanner <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">boolean</span> continueLoop <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// determines if more input is needed</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>continueLoop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">Integer</span> numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">,</span> quotient <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">try</span> <span class="token punctuation">{</span> <span class="token comment">// read two numbers and calculate quotient</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer numerator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        numerator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Please enter an integer denominator: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        denominator <span class="token operator">=</span> scanner<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        quotient <span class="token operator">=</span> <span class="token function">quotient</span><span class="token punctuation">(</span>numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%nResult: %d / %d = %d%n"</span><span class="token punctuation">,</span> numerator<span class="token punctuation">,</span> denominator<span class="token punctuation">,</span> quotient<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        continueLoop <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InputMismatchException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        scanner<span class="token punctuation">.</span><span class="token function">nextLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// discard input so we can try again</span>
+        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"You must enter integers. Please try again.%n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Cannot divide by 0. Please try again.%n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>quotient <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span>
+          <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"OK: Successful division!%n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span>
+          <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"ERROR: Unsuccessful division!%n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">quotient</span><span class="token punctuation">(</span><span class="token keyword">int</span> numerator<span class="token punctuation">,</span> <span class="token keyword">int</span> denominator<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> numerator <span class="token operator">/</span> denominator<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/finally.html">Source</a></p>
+                <h2 id="do-we-really-need-the-finally-block" style="position:relative;"><a
+                    href="#do-we-really-need-the-finally-block"
+                    aria-label="do we really need the finally block permalink" class="anchor before"><svg
+                      aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>Do we really need the <code class="language-text">finally</code> block?</h2>
+                <p>An actual <a
+                    href="https://stackoverflow.com/questions/3861522/do-you-really-need-the-finally-block">question</a>
+                  from Stackoverflow:</p>
+                <blockquote>
+                  <p>There are 3 permutations of a try...catch...finally block in java.</p>
+                  <ol>
+                    <li>try...catch</li>
+                    <li>try...catch...finally</li>
+                    <li>try...finally</li>
+                  </ol>
+                  <p>Once the finally block is executed, control goes to the next line after the finally block. If I
+                    remove the finally block and move all its statements to the line after the try...catch block, would
+                    that have the same effect as having them in the finally block?</p>
+                </blockquote>
+                <p>Some appropriate answers to this questions are:</p>
+                <ol>
+                  <li>Exceptions are for actual exceptional situations:
+                    <ul>
+                      <li>You should not assume that the execution of your code will always continue after an execution
+                        is thrown.</li>
+                      <li>We usually don't want our applications to swallow errors.</li>
+                    </ul>
+                  </li>
+                  <li>You may return on the catch block and the finally block will still be executed:
+                    <div class="gatsby-highlight" data-language="java">
+                      <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">double</span> p <span class="token operator">=</span> <span class="token number">1.0D</span><span class="token punctuation">;</span>
+  <span class="token class-name">String</span> str <span class="token operator">=</span> <span class="token string">"bla"</span><span class="token punctuation">;</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    p <span class="token operator">=</span> <span class="token class-name">Double</span><span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> ex<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Exception Happened"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>  <span class="token comment">//return statement here!!!</span>
+  <span class="token punctuation">}</span> <span class="token keyword">finally</span><span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Finally"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"After finally"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+                    </div>
+                    <div class="gatsby-highlight" data-language="text">
+                      <pre class="language-text"><code class="language-text">Exception Happened 
+Finally</code></pre>
+                    </div>
+                  </li>
+                </ol>
+                <h2 id="exercise-2-using-try-catch-finally" style="position:relative;"><a
+                    href="#exercise-2-using-try-catch-finally" aria-label="exercise 2 using try catch finally permalink"
+                    class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1"
+                      viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>Exercise 2: Using <code class="language-text">try-catch-finally</code></h2>
+                <ul>
+                  <li>Write a main method with two try-catch-finally blocks:
+                    <ul>
+                      <li>In the first try block, throw an exception</li>
+                      <li>In the second try block, do not throw an exception</li>
+                      <li>In each <code class="language-text">try</code>, <code class="language-text">catch</code>, and
+                        <code class="language-text">finally</code> block print out something in the console</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>You can find the solution to this exercise <a
+                    href="https://github.com/Programming-Project-2021-22/lecture-exceptions/tree/exercise-2">here</a>.
+                </p>
+                <h2 id="try-with-resources" style="position:relative;"><a href="#try-with-resources"
+                    aria-label="try with resources permalink" class="anchor before"><svg aria-hidden="true"
+                      focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                      <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                      </path>
+                    </svg></a>Try-with-resources</h2>
+                <p>The code below uses the try-with-resources statement:</p>
+                <div class="gatsby-highlight" data-language="java">
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">FileWriter</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">IOException</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">String</span> fileName <span class="token operator">=</span> <span class="token string">"bohemian-rhapsody.txt"</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">try</span> <span class="token punctuation">(</span><span class="token class-name">FileWriter</span> writer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileWriter</span><span class="token punctuation">(</span>fileName<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      writer<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Is this the real life?\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      writer<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Is this just fantasy?\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      writer<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Caught in a landslide\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      writer<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"No escape from reality\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Could not write to file! :("</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
+                </div>
+                <p>It may substitute the <code class="language-text">finally</code> block in many occasions.</p>
+                <p>To use it, however, the resource being open must implement the <a
+                    href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html"><strong><code
+                        class="language-text">AutoCloseable</code></strong></a> interface.</p>
+                <!-- 
+## Exercise 3
+
+- Write the ```Resource1 implements AutoCloseable``` class that prints out something in the `close()` method
+- In the main method, write a try-with-resources code that creates a `Resource1` object and just prints something
+
+
+
+```java
+public class Runner {
+
+  public static void main(String[] args) {
+    try (Resource1 r = new Resource1()) {
+      System.out.println("Inside Resource 1 Test TRY block.");
+    }
+
+    System.out.println("Inside Resource 1 Test.");
+  }
+
+}
+```
+
+```java
+public class Resource1 implements AutoCloseable {
+
+  @Override
+  public void close() {
+    System.out.println("Closing open resources in Resource 1.");
+  }
+
+}
+``` -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-navbar"></div>
+          <div class="footer-content"><a href="/java/memory-model">Previous</a><a href="/exceptions/throwables">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gatsby-announcer"
+      style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0"
+      aria-live="assertive" aria-atomic="true"></div>
+  </div>
+  <script
+    id="gatsby-script-loader">/*<![CDATA[*/window.pagePath = "/exceptions/exceptions"; window.___webpackCompilationHash = "6009b30b0983d0cae420";/*]]>*/</script>
+  <script
+    id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping = { "polyfill": ["/polyfill-82df740e7cad994d0af0.js"], "app": ["/app-28fa38d494eb64b1e03c.js"], "component---src-pages-index-js": ["/component---src-pages-index-js-dcdcfbc8b0a42aa432c1.js"], "component---src-templates-template-js": ["/component---src-templates-template-js-aadc16a91c2ce3d4e3c3.js"] };/*]]>*/</script>
+  <script src="/polyfill-82df740e7cad994d0af0.js" nomodule=""></script>
+  <script src="/component---src-templates-template-js-aadc16a91c2ce3d4e3c3.js" async=""></script>
+  <script src="/app-28fa38d494eb64b1e03c.js" async=""></script>
+  <script src="/framework-675a07cb9aff63570c38.js" async=""></script>
+  <script src="/webpack-runtime-af5602edea791ae856a0.js" async=""></script>
+</body>
+
+</html>
