@@ -705,7 +705,7 @@
             <div class="body-content-data">
               <h1>5.3. Declaring Exceptions Thrown by Methods</h1>
               <div>
-                <p>Java adopts a catch or throws approach for checked exceptions. That is, if your method can throw a
+                <p>Java adopts a "catch" or "throws" approach for checked exceptions. That is, if your method can throw a
                   checked exception under certain conditions, you must either handle it by itself or you must declare
                   that it may throw it.</p>
                 <h2 id="the-throws-clause" style="position:relative;"><a href="#the-throws-clause"
@@ -715,21 +715,21 @@
                         d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
                       </path>
                     </svg></a>The <code class="language-text">throws</code> clause</h2>
-                <p>To declare the types of exception a method may throw, we use the <code
-                    class="language-text">throws</code> clause:</p>
+                <p>To declare the exception types a method may throw, we use the <code
+                    class="language-text">throws</code> clause.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">quotient</span><span class="token punctuation">(</span><span class="token keyword">int</span> numerator<span class="token punctuation">,</span> <span class="token keyword">int</span> denominator<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token class-name">ArithmeticException</span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span> numerator <span class="token operator">/</span> denominator<span class="token punctuation">;</span> <span class="token comment">// possible division by zero</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>A method may throw multiple exception types:</p>
+                <p>A method may throw multiple exception types.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token class-name">IOException</span><span class="token punctuation">,</span> <span class="token class-name">ArrayIndexOutOfBoundsException</span> <span class="token punctuation">{</span>
   <span class="token comment">// ....</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
                 <p>However, note that you don't need to declare unchecked exceptions. Thus, the previous declaration
-                  might be simplified as:</p>
+                  might be simplified.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
   <span class="token comment">// ....</span>
@@ -737,7 +737,7 @@
                 </div>
                 <p>Any subtype of the exception type identified in the <code class="language-text">throws</code> clause
                   may be thrown by the method.</p>
-                <p>Thus, a method in which can throw <code class="language-text">IOException</code>, may actually throw:
+                <p>Consequently, a method that can throw <code class="language-text">IOException</code> may actually throw:
                 </p>
                 <ul>
                   <li><code class="language-text">FileNotFoundException</code></li>
