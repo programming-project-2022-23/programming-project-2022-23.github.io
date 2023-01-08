@@ -712,14 +712,14 @@
                         d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
                       </path>
                     </svg></a>Learning goals</h2>
-                <p>In this module, you will learn about:</p>
+                <p>In this module, you will learn about</p>
                 <ol>
-                  <li>Exceptional occurrences in our programs</li>
+                  <li></code>exception occurrences, </li>
                   <li><code class="language-text">Throwable</code>, <code class="language-text">Exception</code>, <code
-                      class="language-text">RuntimeException</code>, and <code class="language-text">Error</code></li>
-                  <li>Handling exceptions using <code class="language-text">try-catch</code></li>
-                  <li>Declaring exceptions</li>
-                  <li>Creating custom exceptions</li>
+                      class="language-text">RuntimeException</code>, and <code class="language-text">Error,</code>  expressions</li>
+                  <li>handling exceptions using <code class="language-text">try-catch</code> blocks,</li>
+                  <li>declaring exceptions, and</li>
+                  <li>creating custom exceptions.</li>
                 </ol>
                 <h2 id="introduction" style="position:relative;"><a href="#introduction"
                     aria-label="introduction permalink" class="anchor before"><svg aria-hidden="true" focusable="false"
@@ -728,7 +728,7 @@
                         d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
                       </path>
                     </svg></a>Introduction</h2>
-                <p>Consider the following program:</p>
+                <p>Consider the following program.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
 
@@ -763,21 +763,21 @@
                         d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
                       </path>
                     </svg></a>What is an exception?</h2>
-                <p>An exception is <em>an event, which occurs during the execution of a program, that disrupts the
-                    normal flow of the program's instructions</em>.</p>
-                <p>Some examples include:</p>
+                <p>An exception is <em>an event, which occurs during the execution of a program and disrupts the
+                    normal flow of the program's instructions.</em>.</p>
+                <p>Some examples include</p>
                 <ul>
-                  <li>Integer division by zero</li>
-                  <li>Array access out of bound</li>
-                  <li>Trying to access a field via a null pointer</li>
+                  <li>division by zero,</li>
+                  <li>array access out of bounds, and</li>
+                  <li>attempting to access a field via a null pointer.</li>
                 </ul>
-                <p>An exception is an object that contains:</p>
+                <p>An exception is an object that contains</p>
                 <ul>
-                  <li>Information about the error, including its type</li>
-                  <li>The state of the program when it occurred</li>
-                  <li>Optionally, other custom information</li>
+                  <li>information about the error, including its type,</li>
+                  <li>the state of the program when it occurred, and</li>
+                  <li>custom information.</li>
                 </ul>
-                <p>The term exception is shorthand for the phrase <em>"exceptional event"</em></p>
+                <p>The term exception is shorthand for the phrase <em>"exceptional event"</em>.</p>
                 <p><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html">Source</a></p>
                 <h2 id="what-happens-when-an-exception-occurs" style="position:relative;"><a
                     href="#what-happens-when-an-exception-occurs"
@@ -787,26 +787,24 @@
                         d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
                       </path>
                     </svg></a>What happens when an exception occurs?</h2>
-                <p><strong>Process</strong>:</p>
                 <ol>
-                  <li>An exception occurs</li>
-                  <li>The method stops executing</li>
-                  <li>The method creates an exception object</li>
-                  <li>The methods hands the exception object off to the runtime system</li>
-                  <li>The runtime system searches the <em>call stack</em> for an <em>exception handler</em></li>
-                  <li>If the runtime system finds an appropriate exception handler, the exception is hand to it</li>
-                  <li>The exception handler starts to execute</li>
+                  <li>The method stops executing.</li>
+                  <li>The method creates an exception object.</li>
+                  <li>The methods passes the exception object to the runtime system.</li>
+                  <li>The runtime system searches the <em>call stack</em> for an <em>exception handler</em>.</li>
+                  <li>If the runtime system finds an appropriate exception handler, the exception is passed to it.</li>
+                  <li>The exception handler starts to execute.</li>
                 </ol>
-                <p>If no exception handler is found on step 6, the program prints the call stack to the console and
+                <p>If no exception handler is found, the program prints the call stack to the console and
                   terminates.</p>
                 <br />
                 <p><img src="/95d41cec0e97c8531847d18a041ed19d/exceptions-errorOccurs.gif" alt="exception-process"></p>
-                <p>In this context, we often use the following expressions:</p>
+                <p>We often use the following expressions.</p>
                 <ul>
-                  <li><strong>to throw an exception</strong>: refers to the actions of creating an exception object and
-                    handing it over to the runtime system.</li>
-                  <li><strong>to catch an exception"</strong>: refers to the actions of the runtime system handing over
-                    an exception to a piece of code that can handle it.</li>
+                  <li><strong>to throw an exception</strong> refers to creating an exception object and
+                    passing it to the runtime system.</li>
+                  <li><strong>to catch an exception"</strong> refers to passing
+                    an exception by the runtime system to a piece of code that can handle the exception.</li>
                 </ul>
                 <h2 id="call-stack" style="position:relative;"><a href="#call-stack" aria-label="call stack permalink"
                     class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1"
@@ -835,16 +833,15 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
 	at java.util.Scanner.nextInt(Scanner.java:2076)
 	at DivideByZeroNoExceptionHandling.main(DivideByZeroNoExceptionHandling.java:14)</code></pre>
                 </div>
-                <p>We can get the following information from the call stack:</p>
+                <p>We can get the following information from the call stack.</p>
                 <ul>
-                  <li>The thread in which the exception occurred</li>
-                  <li>The method which threw the exception</li>
-                  <li>The exact line which threw the exception</li>
-                  <li>The ordered list of method calls at the moment the exception was thrown, either if it our class or
-                    someone else's</li>
+                  <li>The thread in which the exception occurred.</li>
+                  <li>The method which threw the exception.</li>
+                  <li>The exact line which threw the exception.</li>
+                  <li>The ordered list of method calls at the moment the exception was thrown.</li>
                 </ul>
                 <p><strong>Tip:</strong> To understand what broke your code and discover how to fix it, start by looking
-                  at the first method you wrote within the call stack.</p>
+                  at the first method you wrote in the call stack.</p>
                 <h2 id="exception-handlers" style="position:relative;"><a href="#exception-handlers"
                     aria-label="exception handlers permalink" class="anchor before"><svg aria-hidden="true"
                       focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
