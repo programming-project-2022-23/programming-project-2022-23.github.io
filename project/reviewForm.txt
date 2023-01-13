@@ -1,0 +1,151 @@
+Project Review Form
+Here you will find the procedure you should follow to review your 
+colleagues' projects. Read it carefully before starting your review.
+
+Before you start
+You should only take into account the code in the default branch of 
+the project's repository.
+
+This is not a competition, so be fair and objective in your review, 
+JUSTIFYING your assessments concisely.
+
+Make sure you have at least Java 17 installed before proceeding with 
+your review.
+
+To check your Java version, run:
+
+$ java --version
+
+Clone the repository and carefully read the instructions on its 
+README.md file before your start your review.
+
+Make sure you can compile, run the test suite, run the application, 
+and generate the documentation for the project. If you have any 
+issues in any of these steps, open an issue on the project's 
+repository and describe your problem.
+
+After you finish your review, post it as an issue on the project's 
+repository.
+
+Review form
+
+1. General
+
+1.1. How creative is the project? (0: I've seen this on Youtube, 1: 
+not creative 2: average, 3: creative, 4: very creative, 5: wow!)
+
+1.2. How difficult was it to implement the project? (0: no 
+challenge, 1: very easy, 2: easy, 3: fair, 4: complex, 5: insane)
+
+1.3. List 3 positive aspects of the project. Motivate your 
+selection.
+
+1.
+2.
+3.
+
+1.4. List 3 negative aspects of the project. Motivate your 
+selection.
+
+1.
+2.
+3.
+
+2. Programming techniques
+
+2.1. Evaluate how well 5 programming techniques we learned 
+throughout the course were adopted in the project. Assign a mark 
+from 0 to 5 to each technique, where 0 means completely incorrect 
+usage and 5 means perfect usage.
+
+1.
+2.
+3.
+4.
+5.
+
+3. Git repository
+
+3.1. How appropriate is the .gitignore file of the project? (0: 
+missing, 1: very bad, 2: bad 3: average, 4: good, 5: very good)
+
+3.2. How appropriate is the README.md file of the project? (0: 
+missing, 1: very bad, 2: bad 3: average, 4: good, 5: very good)
+
+4. Maven
+
+4.1. Can you compile the project via Maven? (0: no, 1: yes, but..., 
+2: yes)
+
+4.2. Can you clean the project via Maven? (0: no, 1: yes, but..., 2: 
+yes)
+
+4.3. Can you run the project via Maven? Check README.md on how to 
+run the project. (0: no, 1: yes, but..., 2: yes)
+
+4.4. Are the project's dependencies appropriately configured in 
+pom.xml? (0: no, 1: some, 2: yes)
+
+4.5. Are all Maven plugins appropriately configured in pom.xml? (0: 
+no, 1: some, 2: yes)
+
+4.6. Does the project adopt Maven's standard directory layout? (0: 
+no, 1: yes, but..., 2: yes)
+
+5. Testing
+5.1. Are all tests passing? Run mvn test. (0: no, 1: yes, but..., 2: 
+yes)
+
+5.2. How well do the tests cover the code? (0: no tests, 1: no 
+important method, 2: some important methods, 3: most important 
+methods, 4: all important methods, 5: 100% test coverage)
+
+5.3. Do the tests actually verify the expected behavior of the 
+program? (0: no tests, 1: useless tests, 2: most don't, 3: some do, 
+some don't, 4: most do, 5: awesome tests)
+
+5.4. How well can you understand what the tests are supposed to 
+verify? (0: no tests, 1: what is going on?, 2: most are not 
+understandable, 3: some are understandable, some aren't, 4: most are 
+understandable, 5: all test are understandable)
+
+6. Documentation
+
+6.1. How understandable is the Javadoc written for classes, fields 
+and methods of the program? (0: no documentation, 1: very poor, 2: 
+poor, 3: average, 4: good, 5: awesome)
+
+6.2. How useful is the Javadoc written for classes, fields and 
+methods of the program? (0: no documentation, 1: irrelevant, 2: 
+little utility, 3: average, 4: useful, 5: very useful)
+
+6.3. Can you generate documentation files for this project? Run mvn 
+javadoc:javadoc. (0: no, 1: yes, but..., 2: yes)
+
+6.4. How adequate are the non-javadoc comments written throughout 
+the code? (0: mostly inadequate, 1: average, 2: mostly adequate, 3: 
+awesome)
+
+7. Code quality
+
+7.1. Is the code style adopted throughout the project consistent? 
+Consider how whitespace is represented (spaces or tabs), tab size, 
+naming conventions for classes, methods and variables, indentation, 
+braces usage, line width. See Google Java Style Guide as an example 
+of code style guidelines. (0: no, 1: yes, but..., 2: yes)
+
+7.2. How would you rate the project in terms of code duplication? 
+(0: a lot of duplication, 1: some duplication, 2: barely any 
+duplication, 3: no code duplication / only justifiable duplication)
+
+7.3. How easy it is to understand how the program works by looking 
+at the source code? (0: mostly hard to understand, 1: some fragments 
+are hard to follow, 2: not hard, but not easy, 3: easy to 
+understand)
+
+7.4. Is the program excessively inefficient? (0: most methods, 1: 
+many methods, 2: few methods, 3: almost no method)
+
+7.5. Does the program crash unexpectedly (e.g. by an uncaught 
+exception)? (0: all the time, 1: rarely, 2: it happened once, 3: 
+never)
