@@ -1040,11 +1040,11 @@
                     <div class="gatsby-highlight" data-language="java">
                       <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Runner</span> <span class="token punctuation">{</span>
   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token class-name">Person</span> tiago <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"Tiago"</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token class-name">Person</span> davi <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"Davi"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">Person</span> john <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"John"</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">Person</span> jane <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"Jane"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>tiago<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>davi<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>john<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>jane<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
                     </div>
@@ -1059,8 +1059,8 @@
                     <div class="gatsby-highlight" data-language="shell">
                       <pre
                         class="language-shell"><code class="language-shell"><span class="command-line-prompt"><span data-user=user data-host=localhost></span><span></span><span></span></span>java Runner
-Person<span class="token punctuation">{</span>name<span class="token operator">=</span><span class="token string">'Tiago'</span>, <span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">31</span><span class="token punctuation">}</span>
-Person<span class="token punctuation">{</span>name<span class="token operator">=</span><span class="token string">'Davi'</span>, <span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">}</span></code></pre>
+Person<span class="token punctuation">{</span>name<span class="token operator">=</span><span class="token string">'John'</span>, <span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">31</span><span class="token punctuation">}</span>
+Person<span class="token punctuation">{</span>name<span class="token operator">=</span><span class="token string">'Jane'</span>, <span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">}</span></code></pre>
                     </div>
                   </li>
                   <li>Move your <code class="language-text">Person.class</code> to a subfolder called <code
@@ -1184,8 +1184,8 @@ Caused by: java.lang.ClassNotFoundException: Person
                 <div class="gatsby-highlight" data-language="shell">
                   <pre
                     class="language-shell"><code class="language-shell"><span class="command-line-prompt"><span data-user=user data-host=localhost></span><span></span><span></span></span>java -cp subdir/:. Runner
-Person<span class="token punctuation">{</span>name<span class="token operator">=</span><span class="token string">'Tiago'</span>, <span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">31</span><span class="token punctuation">}</span>
-Person<span class="token punctuation">{</span>name<span class="token operator">=</span><span class="token string">'Davi'</span>, <span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">}</span></code></pre>
+Person<span class="token punctuation">{</span>name<span class="token operator">=</span><span class="token string">'John'</span>, <span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">31</span><span class="token punctuation">}</span>
+Person<span class="token punctuation">{</span>name<span class="token operator">=</span><span class="token string">'Jane'</span>, <span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">}</span></code></pre>
                 </div>
                 <h2 id="bytecode-verifier" style="position:relative;"><a href="#bytecode-verifier"
                     aria-label="bytecode verifier permalink" class="anchor before"><svg aria-hidden="true"
