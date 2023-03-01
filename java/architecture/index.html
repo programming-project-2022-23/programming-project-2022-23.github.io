@@ -1115,10 +1115,10 @@ Caused by: java.lang.ClassNotFoundException: Person
                 <p>The JVM uses several class loaders.</p>
                 <ul>
                   <li>The <strong>bootstrap class loader</strong> loads the core Java libraries located in the <code
-                      class="language-text">&lt;JAVA_HOME>/jre/lib</code> directory. This class loader, which is part of
+                      class="language-text">&lt;JAVA_HOME>/lib</code> directory. This class loader, which is part of
                     the core JVM, is written in native code.</li>
                   <li>The <strong>extensions class loader</strong> loads the code in the extensions directories (<code
-                      class="language-text">&lt;JAVA_HOME>/jre/lib/ext</code>, or any other directory specified by the
+                      class="language-text">&lt;JAVA_HOME>/lib/ext</code>, or any other directory specified by the
                     <code class="language-text">java.ext.dirs</code> system property).</li>
                   <li>The <strong>system class loader</strong> loads code found on <code
                       class="language-text">java.class.path</code>, which maps to the <code
