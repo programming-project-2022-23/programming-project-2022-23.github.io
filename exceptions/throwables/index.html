@@ -754,8 +754,12 @@
                   subclasses of <code class="language-text">RuntimeException</code> are called <strong>checked
                     exceptions</strong>.</p>
                 <p>Checked exceptions need to be declared in a method or constructor's <code
-                    class="language-text">throws</code> clause if they can be thrown by the execution of the method or
-                  constructor and propagate outside the method or constructor boundary.</p>
+                    class="language-text">throws</code> clause if 
+                    <ul>
+                      <li> they can be thrown by the execution of the method or constructor, and</li>
+                      <li> propagate outside the method or constructor boundary.</li>
+                    </ul>
+                </p>
                 <h2 id="class-runtimeexception" style="position:relative;"><a href="#class-runtimeexception"
                     aria-label="class runtimeexception permalink" class="anchor before"><svg aria-hidden="true"
                       focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -767,9 +771,8 @@
                         class="language-text">RuntimeException</code></strong></a> is the superclass of those exceptions
                   that can be thrown during the normal operation of the Java Virtual Machine.</p>
                 <p>RuntimeException and its subclasses are unchecked exceptions, which means that they do not need to be
-                  declared in a method or constructor's <code class="language-text">throws</code> clause if they can be
-                  thrown by the execution of the method or constructor and propagate outside the method or constructor
-                  boundary.</p>
+                  declared in a method or constructor's <code class="language-text">throws</code> clause.</p>
+                  
                 <p>Most runtime exceptions can be avoided by checking certain conditions. </p>
                 <ul>
                   <li><code class="language-text">NullPointerException</code> checks if reference variable is null
@@ -802,21 +805,21 @@
                         d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
                       </path>
                     </svg></a>Class <code class="language-text">Error</code></h2>
-                <p>An instance of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html"><strong><code
-                        class="language-text">Error</code></strong></a> indicates a serious problem that an
-                  application <strong>should not</strong> try to catch.</p>
-                <p>Most such errors are abnormal conditions.</p>
+                     <p>extends the Throwable class.</p>
+
+                <p>An <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html"><strong><code
+                        class="language-text">Error</code></strong></a> error is thrown by JVM. It 
+                        indicates a serious problem that an application <strong>should not</strong> try to catch.</p>
+                <p> Here are a few examples:</p>
                 <ul>
-                  <li><code class="language-text">OutOfMemoryError</code> is thrown when there is insufficient space to
-                    allocate an object in the Java heap.</li>
-                  <li><code class="language-text">StackOverflowError</code> is thrown when an application recurses too
-                    deeply.</li>
+                  <li><code class="language-text">OutOfMemoryError</code> is thrown when 
+                    the JVM runs out of memory and cannot clean the memory using garbage collection.</li>
+                  <li><code class="language-text">StackOverflowError</code> is thrown when 
+                   the memory allocated for the stack of the method calls is not enough to store another stack frame.</li>
+                  <li><code class="language-text">NoClassDefFoundError</code>  is thrown when the JVM cannot 
+                    find the definition of the class requested by the currently loaded class.</li>
                   <li><code class="language-text">AssertionError</code> is thrown when an assertion has failed.</li>
                 </ul>
-                <p>A method is not required to declare in its <code class="language-text">throws</code> clause any
-                  subclasses of <code class="language-text">Error</code> that might be thrown during the execution of
-                  the method but not caught, since these errors are abnormal conditions that should never occur.</p>
-                <p>Errors are also unchecked exceptions, that is, we don't need to explicitly handle them.</p>
               </div>
             </div>
           </div>
