@@ -1145,12 +1145,12 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
                 <ol>
                   <li>Exceptions are for actual exceptional situations.
                     <ul>
-                      <li>You should not assume that the execution of your code will always continue after an execution
-                        is thrown.</li>
-                      <li>We usually don't want our applications to swallow errors.</li>
+                      <li>Your code will not necessarily continue its execution after an exception is thrown.</li>
+                      <li>We do not want the clean execution of our program to be interrupted by an exception.</li>
                     </ul>
                   </li>
-                  <li>You may return on the catch block and the finally block will still be executed.
+                  <li>The finally block will always be executed. This ensures that the finally block is executed even if an unexpected exception occurs.
+                    The finally block allows the programmer to avoid having cleanup code accidentally bypassed by a return, continue, or break. 
                     <div class="gatsby-highlight" data-language="java">
                       <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">double</span> p <span class="token operator">=</span> <span class="token number">1.0D</span><span class="token punctuation">;</span>
