@@ -718,20 +718,20 @@
                 <p>To declare the exception types a method may throw, we use the <code
                     class="language-text">throws</code> clause.</p>
                 <div class="gatsby-highlight" data-language="java">
-                  <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">quotient</span><span class="token punctuation">(</span><span class="token keyword">int</span> numerator<span class="token punctuation">,</span> <span class="token keyword">int</span> denominator<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token class-name">ArithmeticException</span> <span class="token punctuation">{</span>
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">quotient</span><span class="token punctuation">(</span><span class="token keyword">int</span> numerator<span class="token punctuation">,</span> <span class="token keyword">int</span> denominator<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ArithmeticException</span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span> numerator <span class="token operator">/</span> denominator<span class="token punctuation">;</span> <span class="token comment">// possible division by zero</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
                 <p>A method may throw multiple exception types.</p>
                 <div class="gatsby-highlight" data-language="java">
-                  <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token class-name">IOException</span><span class="token punctuation">,</span> <span class="token class-name">ArrayIndexOutOfBoundsException</span> <span class="token punctuation">{</span>
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span><span class="token punctuation">,</span> <span class="token class-name">ArrayIndexOutOfBoundsException</span> <span class="token punctuation">{</span>
   <span class="token comment">// ....</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
                 <p>However, note that you don't need to declare unchecked exceptions. Thus, the previous declaration
                   might be simplified.</p>
                 <div class="gatsby-highlight" data-language="java">
-                  <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+                  <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
   <span class="token comment">// ....</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
