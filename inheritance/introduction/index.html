@@ -1226,7 +1226,7 @@ new amount after withdrawal: 23000</code></pre>
                 <ol>
                   <li>
                     <p><strong>Implementing equals becomes tricky.</strong> Suppose an <code
-                        class="language-text">Animal</code> has a single property: name. Should an <code
+                        class="language-text">Animal</code> has a single property, that is, name. Should an <code
                         class="language-text">Animal</code> with name <code class="language-text">"Fido"</code> equal a
                       <code class="language-text">Dog</code> with name <code class="language-text">"Fido"</code>?</p>
                     <div class="gatsby-highlight" data-language="java">
@@ -1236,8 +1236,8 @@ new amount after withdrawal: 23000</code></pre>
             <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">Animal</span><span class="token punctuation">)</span> o<span class="token punctuation">)</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
                     </div>
-                    <p>What if <code class="language-text">Dog</code> has an additional property <code
-                        class="language-text">breed</code> that an <code class="language-text">Animal</code> lacks?
+                    <p>What if <code class="language-text">Dog</code> has an additional property
+                      that an <code class="language-text">Animal</code> lacks?
                       There’s no obvious solution here!</p>
                   </li>
                   <li>
