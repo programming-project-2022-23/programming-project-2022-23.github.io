@@ -1166,13 +1166,13 @@
                   interfaces without breaking the existing implementation of these interface.</p>
                 <p>It provided flexibility to allow interface defined implementations, which will use as default in the
                   situation where a concrete class fails to provide an implementation for that method.</p>
-                <p>if this:</p>
+                <p>if </p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">OldInterface</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">existingMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>becomes this:</p>
+                <p>becomes</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">OldInterface</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">existingMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1181,7 +1181,7 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>then this class will still compile successfully:</p>
+                <p>then the class below will still compile successfully.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OldInterfaceImplementation</span> <span class="token keyword">implements</span> <span class="token class-name">OldInterface</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">existingMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1189,7 +1189,7 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p>and its instances will have a new method:</p>
+                <p>Then, its instances will have a new method.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre
                     class="language-java"><code class="language-java"><span class="token class-name">OldInterfaceImplementation</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">oldInterfaceImpl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
