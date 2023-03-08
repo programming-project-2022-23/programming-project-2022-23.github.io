@@ -859,12 +859,12 @@
                   <pre
                     class="language-java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">accelerate</span><span class="token punctuation">(</span><span class="token keyword">double</span> targetSpeed<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
                 </div>
-                <p><strong>3. Default methods</strong></p>
+                <p><strong>3. Default methods</strong> are</p>
                 <ul>
-                  <li>defined with the <code class="language-text">default</code> modifier</li>
-                  <li>implicitly <code class="language-text">public</code></li>
-                  <li>implemented</li>
-                  <li>since Java 8</li>
+                  <li>defined with the <code class="language-text">default</code> modifier,</li>
+                  <li>implicitly <code class="language-text">public</code>,</li>
+                  <li>implemented, and</li>
+                  <li> available since Java 8.</li>
                 </ul>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">default</span> <span class="token keyword">void</span> <span class="token function">evaluateSpeed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -874,12 +874,12 @@
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"The car is at a risky speed: "</span><span class="token operator">+</span> <span class="token function">getCurrentSpeed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">" km/h"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
                 </div>
-                <p><strong>4. Static methods</strong></p>
+                <p><strong>4. Static methods</strong> are</p>
                 <ul>
-                  <li>are declared with the <code class="language-text">static</code> modifier,</li>
-                  <li>are implicitly <code class="language-text">public</code>,</li>
-                  <li>are implemented, and </li>
-                  <li>should be invoked with the class name, without creating an instance of the class.</li>
+                  <li>declared with the <code class="language-text">static</code> modifier,</li>
+                  <li>implicitly <code class="language-text">public</code>, and</li>
+                  <li>implemented.</li>
+                  <li>They should be invoked with the class name, without creating an instance of the class.</li>
                 </ul>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">isSpeedAllowed</span><span class="token punctuation">(</span><span class="token keyword">double</span> speed<span class="token punctuation">)</span> <span class="token punctuation">{</span>
