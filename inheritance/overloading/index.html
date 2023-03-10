@@ -705,7 +705,7 @@
             <div class="body-content-data">
               <h1>6.6. Method Overloading</h1>
               <div>
-                <p>Consider the following classes:</p>
+                <p>Consider the following classes.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">GraphicObject</span> <span class="token punctuation">{</span>
     <span class="token keyword">int</span> id<span class="token punctuation">;</span>
@@ -732,14 +732,14 @@
 <span class="token punctuation">}</span></code></pre>
                 </div>
                 <p>Suppose that you wanted to add another <code class="language-text">print()</code> method on <code
-                    class="language-text">Rectangle</code>:</p>
+                    class="language-text">Rectangle</code>.</p>
                 <div class="gatsby-highlight" data-language="java">
                   <pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token class-name">String</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span> <span class="token string">"Printing rectangle "</span> <span class="token operator">+</span> id <span class="token operator">+</span> <span class="token string">" with parameter \""</span> <span class="token operator">+</span> value <span class="token operator">+</span> <span class="token string">"\""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span></code></pre>
                 </div>
                 <p>The modified <code class="language-text">Rectangle</code> class now has two <code
-                    class="language-text">print</code> methods:</p>
+                    class="language-text">print</code> methods.</p>
                 <ol>
                   <li><code class="language-text">void print()</code></li>
                   <li><code class="language-text">void print(String value)</code></li>
@@ -754,13 +754,13 @@
                         d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
                       </path>
                     </svg></a>Overriding vs. Overloading in Java</h2>
-                <p><strong>Overriding</strong>:</p>
+                <p><strong>Overriding</strong></p>
                 <ul>
-                  <li>Having two methods with the <strong>same method signature</strong></li>
-                  <li>One method is in an <strong>ancestor class</strong></li>
-                  <li>One is in the <strong>child class</strong></li>
+                  <li>allows us to have two methods with the <strong>same method signature</strong>.</li>
+                  <li>One of the methods is in an <strong>ancestor class</strong>.</li>
+                  <li>The other is in the <strong>child class</strong>.</li>
                   <li>Overriding allows a child class to provide a specific implementation of a method that is already
-                    provided one of its ancestor classes</li>
+                    provided one of its ancestor classes.</li>
                 </ul>
                 <p><strong>Overloading</strong>:</p>
                 <ul>
