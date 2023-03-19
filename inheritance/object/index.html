@@ -911,59 +911,13 @@
                     </ul>
                   </li>
                 </ol>
-                <!-- ## Solution
 
-```java
-public class Something implements Cloneable {
-    public int a = 0;
+                      <p>You can find the solution to this exercise <a
+                  href="https://github.com/ozan-k/inheritance-exercise/tree/exercise9">here</a>.
+              </p>
 
-		public Something(int a) {
-        this.a = a;
-    }
 
-    public int getA() {
-        return a;
-    }
-
-    public void setA(int a) {
-        this.a = a;
-    }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-}
-```
-
-```java
-public class Runner {
-   public static void main(String[] args) {
-      Something s1 = new Something(10);
-      Something s3 = s1;
-      System.out.println("s1=" + s1.a);
-      System.out.println("s3=" + s3.a);
-      s3.a = 30;
-      System.out.println("s1=" + s1.a);
-      System.out.println("s3=" + s3.a);
-      System.out.println(); 
-      try {
-         Something s2 = new Something(20);
-         Something s4 = (Something) s2.clone();
-         System.out.println("s2=" + s2.a);
-         System.out.println("s4=" + s4.a);  
-         s4.a = 40;
-         System.out.println("s2=" + s2.a);
-         System.out.println("s4=" + s4.a);
-      } catch (CloneNotSupportedException e) {
-         e.printStackTrace();
-      }
-  }
-}
-
-```
-
-```output
+<!-- ```output
 s1=10
 s3=10
 s1=30
