@@ -972,18 +972,18 @@ s4=40
                     class="language-text">equals()</code> performs a referential equality check.</p>
                 <p>To perform content equality, we need to override <code class="language-text">equals()</code>.</p>
                 <p>The rules for overriding this method are stated in Oracle's official documentation for the <code
-                    class="language-text">Object</code> class:</p>
+                    class="language-text">Object</code> class.</p>
                 <ul>
-                  <li>Be <strong>reflexive</strong>: For any non-null reference value x, <code
+                  <li><strong>Reflexive</strong>: For any non-null reference value x, <code
                       class="language-text">x.equals(x)</code> should return true.</li>
-                  <li>Be <strong>symmetric</strong>: For any non-null reference values x and y, <code
+                  <li><strong>Symmetric</strong>: For any non-null reference values x and y, <code
                       class="language-text">x.equals(y)</code> should return true if and only if <code
                       class="language-text">y.equals(x)</code> returns true.</li>
-                  <li>Be <strong>transitive</strong>: For any non-null reference values x, y, and z, if <code
+                  <li><strong>Transitive</strong>: For any non-null reference values x, y, and z, if <code
                       class="language-text">x.equals(y)</code> returns true and <code
                       class="language-text">y.equals(z)</code> returns true, then <code
                       class="language-text">x.equals(z)</code> should return true.</li>
-                  <li>Be <strong>consistent</strong>: For any non-null reference values x and y, multiple invocations of
+                  <li><strong>Consistent</strong>: For any non-null reference values x and y, multiple invocations of
                     <code class="language-text">x.equals(y)</code> consistently return true or consistently return
                     false, provided no information used in equals comparisons on the objects is modified.</li>
                   <li>For any non-null reference value x, <code class="language-text">x.equals(null)</code> should
