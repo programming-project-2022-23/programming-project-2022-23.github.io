@@ -818,41 +818,6 @@
                   href="https://github.com/ozan-k/inheritance-exercise/tree/exercise8">here</a>.
               </p>
 
-                <!-- ## Solution
-
-```java
-public class Something {
-   private int a = 0;
-   public int b = 0;
-
-   public int getA() {
-     return a;
-   }
-
-   public void setA(int a) {
-     this.a = a;
-   }
-}
-```
-
-```java
-import java.lang.reflect.Field;
-
-public class Runner {
-   public static void main(String[] args) {
-      Something s = new Something();
-
-      Class c = s.getClass();
-
-      System.out.println(c.getName());
-      System.out.println(c.getSuperclass());
-
-      Field[] fields = c.getDeclaredFields();
-      for (Field field : fields)
-         System.out.println(field);
-   }
-}
-``` -->
                 <h2 id="object-duplication" style="position:relative;"><a href="#object-duplication"
                     aria-label="object duplication permalink" class="anchor before"><svg aria-hidden="true"
                       focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
