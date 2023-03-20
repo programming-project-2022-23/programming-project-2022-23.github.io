@@ -931,42 +931,14 @@ animal<span class="token punctuation">.</span><span class="token function">meow<
                       <li>Add methodB()</li>
                     </ul>
                   </li>
-                  <li>Try upcasting and downcasting</li>
+                  <li>Try upcasting and downcasting.</li>
                 </ol>
-                <!-- ## Solution
 
-```java
-class A {
-    public void methodA(){ System.out.println("Does A"); }
-}
 
-class B extends A {
-    public void methodB(){ System.out.println("Does b"); }
-}
+              <!-- <p>You can find the solution to this exercise <a
+                  href="https://github.com/ozan-k/inheritance-exercise/tree/exercise11">here</a>.
+              </p> -->
 
-public class Runner {
-    public static void main(String[] args) {
-        A a = new A();
-        a.methodA();
-    
-        B b = new B();
-        b.methodA();
-        b.methodB();
-
-        A a2 = new B();
-        a2.methodA();
-
-        A a3 = new B(); //we don't have access to methodB()
-        a3.methodA();
-        B b2 = (B) a3;
-        b2.methodB(); //downcasting
-
-        B b3 = (B) new A();
-        b3.methodA();
-        b3.methodB();	//runtime error
-    }
-}
-``` -->
                 <h2 id="casting-with-interfaces" style="position:relative;"><a href="#casting-with-interfaces"
                     aria-label="casting with interfaces permalink" class="anchor before"><svg aria-hidden="true"
                       focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
