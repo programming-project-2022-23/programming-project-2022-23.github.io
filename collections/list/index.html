@@ -606,7 +606,7 @@ public class Exercise1 {
 ## Solution
 
 ```java
-void removeDuplicates(ArrayList<Dog> dogs) {
+static void removeDuplicates(ArrayList<Dog> dogs) {
    ArrayList<Dog> uniqueList = new ArrayList<>();
    ArrayList<Dog> duplicateList = new ArrayList<>();
 
@@ -627,7 +627,7 @@ void removeDuplicates(ArrayList<Dog> dogs) {
 ## Solution using `ListIterator`
 
 ```java
-void removeDuplicatesIterator(ArrayList<Dog> dogs) {
+static void removeDuplicatesIterator(ArrayList<Dog> dogs) {
    ArrayList<Dog> uniqueList = new ArrayList<>();
 
    ListIterator<Dog> iterator = dogs.listIterator();
