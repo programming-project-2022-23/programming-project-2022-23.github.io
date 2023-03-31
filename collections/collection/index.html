@@ -101,7 +101,7 @@
 <li><code class="language-text">boolean removeAll​(Collection&lt;?> c)</code>: Removes all of this collection's elements that are also contained in the specified collection (optional operation).</li>
 <li><code class="language-text">boolean retainAll​(Collection&lt;?> c)</code>: Retains only the elements in this collection that are contained in the specified collection (optional operation).</li>
 </ul>
-<p>Here is a demo:</p>
+<p>Here is a demo.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span>
 
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BasicOperations</span> <span class="token punctuation">{</span>
@@ -124,6 +124,9 @@
       <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Collection size: "</span> <span class="token operator">+</span> friends<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
+
+
+
 <h2 id="traversing-collections" style="position:relative;"><a href="#traversing-collections" aria-label="traversing collections permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Traversing collections</h2>
 <p>We can traverse collections in three ways:</p>
 <ol>
@@ -169,6 +172,12 @@
 		friends<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span> friend <span class="token operator">-></span> <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>friend<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span> </code></pre></div>
+
+<p>You can find the code <a
+  href="https://github.com/ozan-k/collection-exercises/tree/example4_ForEach">here</a>.
+</p>
+
+
 <p>More on lambdas in a later class.</p>
 <h3 id="3-traversing-collections-using-an-iterator" style="position:relative;"><a href="#3-traversing-collections-using-an-iterator" aria-label="3 traversing collections using an iterator permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Traversing collections using an <code class="language-text">Iterator</code></h3>
 <p><code class="language-text">Iterator</code> is an interface that allows iterating over elements in a forward direction by using a <em>cursor pointer</em> to the current element.</p>
@@ -215,6 +224,11 @@
 		<span class="token punctuation">}</span>
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
+
+<p>You can find the code <a
+  href="https://github.com/ozan-k/collection-exercises/tree/example4_ForEach">here</a>.
+</p>
+
 <h2 id="iterable-and-iterator" style="position:relative;"><a href="#iterable-and-iterator" aria-label="iterable and iterator permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Iterable and Iterator</h2>
 <p><strong><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Iterable.html">Iterable</a></strong>: 
   Implementing this interface allows an object to be the target of the enhanced for statement.</p>
