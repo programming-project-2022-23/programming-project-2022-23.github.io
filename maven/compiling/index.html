@@ -112,15 +112,15 @@
 <h2 id="creating-jar-files-from-the-command-line" style="position:relative;"><a href="#creating-jar-files-from-the-command-line" aria-label="creating jar files from the command line permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating jar files from the command line</h2>
 <p>We can create a jar file by running:</p>
 <div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ jar cf hello.jar HelloWorld.class</code></pre></div>
-<p>We will now find a <code class="language-text">hello.jar</code> file in the current directory, which we can run by:</p>
+<p>We will now find a <code class="language-text">hello.jar</code> file in the current directory, which we can run.</p>
 <div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ java -classpath hello.jar HelloWorld</code></pre></div>
-<p>We should see the following output in our terminals:</p>
+<p>We should see the following output in our terminals.</p>
 <div class="gatsby-highlight" data-language="output"><pre class="language-output"><code class="language-output">Hello there!</code></pre></div>
-<p>We can see what is on the inside of our compiled class by running:</p>
+<p>We can see what is inside our compiled class.</p>
 <div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ unzip hello.jar -d tmp</code></pre></div>
 <p>In the <code class="language-text">tmp</code> directory we will find our <code class="language-text">HelloWorld.class</code> and a <code class="language-text">META-INF</code> folder containing a <code class="language-text">MANIFEST.MF</code> file.</p>
 <h2 id="the-manifestmf-file" style="position:relative;"><a href="#the-manifestmf-file" aria-label="the manifestmf file permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The <code class="language-text">MANIFEST.MF</code> file</h2>
-<p>Whenever we create a <code class="language-text">jar</code> file, a default manifest file is created:</p>
+<p>Whenever we create a <code class="language-text">jar</code> file, a default manifest file is created.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token class-name">Manifest</span><span class="token operator">-</span><span class="token class-name">Version</span><span class="token operator">:</span> <span class="token number">1.0</span>
 <span class="token class-name">Created</span><span class="token operator">-</span><span class="token class-name">By</span><span class="token operator">:</span> <span class="token number">13.0</span><span class="token number">.1</span> <span class="token punctuation">(</span><span class="token class-name">Oracle</span> <span class="token class-name">Corporation</span><span class="token punctuation">)</span></code></pre></div>
 <p>A manifest's entries take the form of <code class="language-text">"header: value"</code> pairs.</p>
