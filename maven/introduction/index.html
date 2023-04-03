@@ -130,7 +130,7 @@
 <li>packaging binary code,</li>
 <li>deploying to production systems.</li>
 </ul>
-<p>Examples of build tools:</p>
+<p>Examples of build tools.</p>
 <ul>
 <li>Java: <strong>Ant</strong>, <strong>Maven</strong>, and <strong>Gradle</strong></li>
 <li>Javascript: <a href="https://gulpjs.com/">Gulp</a> and <a href="https://gruntjs.com/">Grunt</a></li>
@@ -140,25 +140,25 @@
 <p>You can find a list of build automation tools <a href="https://en.wikipedia.org/wiki/List_of_build_automation_software">here</a>.</p>
 <p><a href="https://stackoverflow.com/questions/7249871/what-is-a-build-tool">StackOverflow</a></p>
 <h2 id="why-use-a-build-tool" style="position:relative;"><a href="#why-use-a-build-tool" aria-label="why use a build tool permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why use a build tool?</h2>
-<p>In a small project, you may not need one, as you can simply invoke the build process manually. When projects get larger, this stops being practical.</p>
+<p>In a small project, you may not need one, as you can simply invoke the build process manually. When projects get larger, this is not practical.</p>
 <ol>
-<li>We want to keep organize what needs to be built, in what sequence, and what dependencies are needed.</li>
+<li>We want to keep organized what needs to be built, in what sequence, and the dependencies needed.</li>
 <li>We want a <strong>quick</strong> and <strong>consistent</strong> build process.</li>
 <li>We want <strong>easy to build</strong> projects.</li>
 <li>We want to use our own IDEs.</li>
 <li>We want to implement <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous integration</a> and <a href="https://en.wikipedia.org/wiki/Continuous_delivery">delivery</a> pipelines.</li>
 </ol>
-<p>This is how easy it to build a project using Maven:</p>
+<p>This is how easy it to build a project using Maven.</p>
 <div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">mvn package</code></pre></div>
 <p><a href="https://stackoverflow.com/questions/7249871/what-is-a-build-tool">StackOverflow</a></p>
 <h2 id="what-is-good-about-maven" style="position:relative;"><a href="#what-is-good-about-maven" aria-label="what is good about maven permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is good about Maven?</h2>
 <ol>
-<li>Quick project setup: convention over configuration</li>
-<li>Modular projects</li>
-<li>Mature dependency management</li>
-<li>Mature project build lifecycle</li>
-<li>Robust plugin community</li>
-<li>Very good IDE support, including IntelliJ IDEA, Eclipse, and VS Code</li>
+<li>Quick project setup: convention over configuration.</li>
+<li>Modular projects.</li>
+<li>Mature dependency management.</li>
+<li>Mature project build lifecycle.</li>
+<li>Robust plugin community.</li>
+<li>Very good IDE support, including IntelliJ IDEA, Eclipse, and VS Code.</li>
 </ol>
 <h2 id="what-is-not-so-good-about-it" style="position:relative;"><a href="#what-is-not-so-good-about-it" aria-label="what is not so good about it permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is not so good about it?</h2>
 <ol>
