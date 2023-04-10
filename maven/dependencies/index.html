@@ -132,9 +132,9 @@
 <p><a href="https://www.baeldung.com/maven-dependency-scopes">Baeldung article</a>.</p>
 <h2 id="dependency-scope-compile" style="position:relative;"><a href="#dependency-scope-compile" aria-label="dependency scope compile permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependency scope: compile</h2>
 <ul>
-<li>Default scope</li>
-<li>Available on the classpath of the project in all build tasks</li>
-<li>Propagated to dependent projects</li>
+<li>Default scope.</li>
+<li>Available on the classpath of the project in all build tasks.</li>
+<li>Propagated to dependent projects.</li>
 <li>Example: <code class="language-text">Apache HttpClient</code>, <code class="language-text">Guava</code>, <code class="language-text">Apache Commons IO</code></li>
 </ul>
 <div class="gatsby-highlight" data-language="xml"><pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
@@ -156,10 +156,10 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></code></pre></div>
 <h2 id="dependency-scope-provided" style="position:relative;"><a href="#dependency-scope-provided" aria-label="dependency scope provided permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependency scope: provided</h2>
 <ul>
-<li>Dependencies that should be provided at runtime by JDK or a container</li>
-<li>Available only at compile-time and in the test classpath of the project</li>
-<li>Is not propagated to dependent projects</li>
-<li>Example: A web application deployed in some container, where the container already provides some libraries itself</li>
+<li>Dependencies that should be provided at runtime by JDK or a container.</li>
+<li>Available only at compile-time and in the test classpath of the project.</li>
+<li>Is not propagated to dependent projects.</li>
+<li>Example: A web application deployed in some container, where the container already provides some libraries itself.</li>
 </ul>
 <div class="gatsby-highlight" data-language="xml"><pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>javax.servlet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
@@ -169,9 +169,9 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></code></pre></div>
 <h2 id="dependency-scope-runtime" style="position:relative;"><a href="#dependency-scope-runtime" aria-label="dependency scope runtime permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependency scope: runtime</h2>
 <ul>
-<li>Required at runtime, but not needed for compilation of the project code</li>
-<li>Available only at runtime and test classpath, but mussing from compile classpath</li>
-<li>Not propagated to dependent projects</li>
+<li>Required at runtime, but not needed for compilation of the project code.</li>
+<li>Available only at runtime and test classpath, but missing from compile classpath.</li>
+<li>Not propagated to dependent projects.</li>
 <li>Example: <code class="language-text">MySQL JDBCs</code></li>
 </ul>
 <div class="gatsby-highlight" data-language="xml"><pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
@@ -182,9 +182,9 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></code></pre></div>
 <h2 id="dependency-scope-test" style="position:relative;"><a href="#dependency-scope-test" aria-label="dependency scope test permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependency scope: test</h2>
 <ul>
-<li>Not required at standard runtime of the application, but is used only for test purposes</li>
-<li>Available at test and execution classpaths</li>
-<li>Not propagated to dependent projects</li>
+<li>Not required at standard runtime of the application, but is used only for test purposes.</li>
+<li>Available at test and execution classpath.</li>
+<li>Not propagated to dependent projects.</li>
 <li>Example: <code class="language-text">Junit 5</code> and <code class="language-text">Truth</code></li>
 </ul>
 <div class="gatsby-highlight" data-language="xml"><pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
