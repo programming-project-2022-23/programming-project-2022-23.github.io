@@ -59,7 +59,7 @@
 <li>Webpage: <a href="https://maven.apache.org/plugins/maven-clean-plugin/">https://maven.apache.org/plugins/maven-clean-plugin/</a></li>
 </ul>
 <h2 id="clean-plugin---example-1" style="position:relative;"><a href="#clean-plugin---example-1" aria-label="clean plugin   example 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Clean plugin - Example 1</h2>
-<p>The clean plugin can be configured to delete additional files and directories:</p>
+<p>The clean plugin can be configured to delete additional files and directories.</p>
 <div class="gatsby-highlight" data-language="xml"><pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>maven-clean-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>3.1.0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
@@ -86,7 +86,9 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugin</span><span class="token punctuation">></span></span></code></pre></div>
 <h2 id="clean-plugin---example-2" style="position:relative;"><a href="#clean-plugin---example-2" aria-label="clean plugin   example 2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Clean plugin - Example 2</h2>
-<p>We can also call the clean plugin automatically during a build:</p>
+
+<p>We can also call the clean plugin automatically during a build.</p>
+
 <div class="gatsby-highlight" data-language="xml"><pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>maven-clean-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>3.1.0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
@@ -110,7 +112,7 @@
 </ul>
 </li>
 <li>Both goals already bound to their proper phases within the Maven Lifecycle and are, therefore, automatically executed during their respective phases.</li>
-<li>By default the compiler plugin will use Java version 1.6, independently of the JDK you run Maven with. <strong>It is strongly recommended to change this setting</strong></li>
+<li>By default the compiler plugin will use Java version 1.6, independently of the JDK you run Maven with. <strong>It is strongly recommended to change this setting</strong>.</li>
 <li>Webpage: <a href="https://maven.apache.org/plugins/maven-compiler-plugin/">https://maven.apache.org/plugins/maven-compiler-plugin/</a></li>
 </ul>
 <h2 id="compiler-plugin---example" style="position:relative;"><a href="#compiler-plugin---example" aria-label="compiler plugin   example permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Compiler plugin - Example</h2>
@@ -145,8 +147,8 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>project</span><span class="token punctuation">></span></span></code></pre></div>
 <h2 id="resources-plugin" style="position:relative;"><a href="#resources-plugin" aria-label="resources plugin permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resources plugin</h2>
 <ul>
-<li>Handles the copying of project resources to the output directory</li>
-<li>There are two kinds of resources:
+<li>Handles the copying of project resources to the output directory.</li>
+<li>There are two kinds of resources.
 <ul>
 <li>main resources: associated with the main source code</li>
 <li>test resources: associated with the test source code</li>
@@ -162,7 +164,7 @@
 <li>Webpage: <a href="https://maven.apache.org/plugins/maven-resources-plugin/">https://maven.apache.org/plugins/maven-resources-plugin/</a></li>
 </ul>
 <h2 id="resources-plugin---example" style="position:relative;"><a href="#resources-plugin---example" aria-label="resources plugin   example permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resources plugin - Example</h2>
-<p>Here is an example of how to configure and call the <strong><code class="language-text">copy-resources</code></strong> goal:</p>
+<p>Here is an example of how to configure and call the <strong><code class="language-text">copy-resources</code></strong> goal.</p>
 <div class="gatsby-highlight" data-language="xml"><pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>project</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>build</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugins</span><span class="token punctuation">></span></span>
@@ -199,8 +201,10 @@
 </ul>
 </li>
 <li>The plugin generates reports in two different file formats:</li>
-<li>Plain text files (*.txt)</li>
-<li>XML files (*.xml)</li>
+  <ul>
+    <li>Plain text files (*.txt)</li>
+    <li>XML files (*.xml)</li>
+  </ul>
 <li>By default, these files are generated in <em><code class="language-text">${basedir}/target/surefire-reports/TEST-*.xml.</code></em></li>
 <li>Webpage: <a href="https://maven.apache.org/surefire/maven-surefire-plugin/">https://maven.apache.org/surefire/maven-surefire-plugin/</a></li>
 </ul>
