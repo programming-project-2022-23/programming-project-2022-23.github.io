@@ -98,14 +98,14 @@
 <li><code class="language-text">void</code>, if the functional interface method result is <code class="language-text">void</code></li>
 <li>A Java type, primitive type, or reference type that is the same as the return type of the functional interface method</li>
 </ul>
-<p>The <strong>lambda body result</strong> is returned according to one of the following options:</p>
+<p>The <strong>lambda body result</strong> is returned according to one of the following options.</p>
 <ul>
 <li>
-<p>If a single expression is used, the expression value is returned</p>
+<p>If a single expression is used, the expression value is returned.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> x <span class="token operator">+</span> y</code></pre></div>
 </li>
 <li>
-<p>If a statement block is used and the method has a return type, a return statement must be used:</p>
+<p>If a statement block is used and the method has a return type, a return statement must be used.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">{</span>
   x<span class="token operator">++</span><span class="token punctuation">;</span>
   y<span class="token operator">++</span><span class="token punctuation">;</span>
