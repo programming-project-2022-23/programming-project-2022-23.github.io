@@ -86,7 +86,7 @@ Hello Scary Terry!</code></pre></div>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Helloable</span> <span class="token punctuation">{</span>
   <span class="token keyword">void</span> <span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token class-name">Character</span> character<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
-<p>And implement it for each way we say hello:</p>
+<p>We then implement it for each way we say hello.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SimpleHello</span> <span class="token keyword">implements</span> <span class="token class-name">Helloable</span> <span class="token punctuation">{</span>
   <span class="token annotation punctuation">@Override</span>
   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token class-name">Character</span> character<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -123,7 +123,7 @@ Hello Scary Terry!
 Hello Mr. Sanchez.
 Hello Mr. Smith.
 Hello Mr. Terry.</code></pre></div>
-<p>If we want to define how to say hello "on the fly", we can write an anonymous class:</p>
+<p>If we want to define how to say hello "on the fly", we can write an anonymous class.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">Character</span> rick <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Character</span><span class="token punctuation">(</span><span class="token string">"Rick"</span><span class="token punctuation">,</span> <span class="token string">"Sanchez"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
