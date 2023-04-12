@@ -174,7 +174,9 @@
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <div class="gatsby-highlight" data-language="output"><pre class="language-output"><code class="language-output">A map that keeps no particular order: {Sheldon=30, Rajesh=26, Leonard=25}</code></pre></div>
-<h2 id="exercise-4" style="position:relative;"><a href="#exercise-4" aria-label="exercise 4 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exercise 4</h2>
+<h2 id="exercise-4" style="position:relative;"><a href="#exercise-4" aria-label="exercise 4 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+
+</path></svg></a>Exercise 4</h2>
 <p>Write a main method that creates a <code class="language-text">HashMap&lt;String,String></code> and add the pairs:</p>
 <ul>
 <li><code class="language-text">"font_face"</code>: <code class="language-text">"Times New Roman"</code></li>
@@ -207,6 +209,11 @@ public class Runner {
    }
 }
 ``` -->
+<p>You can find the solution to this exercise <a
+  href="https://github.com/ozan-k/collection-exercises/tree/exercise4">here</a>.
+</p>
+
+
 <h2 id="hashing" style="position:relative;"><a href="#hashing" aria-label="hashing permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hashing</h2>
 <p><strong>Definition:</strong> A hash function is any function that can be used to map data of <strong>arbitrary size</strong> to data of <strong>fixed size</strong>.</p>
 <p>The values returned by a Hash function are called hash values, hash codes, digests, or simply Hashes.</p>
@@ -280,6 +287,12 @@ public class MyHash {
 
 }
 ``` -->
+
+<p>You can find the solution to this exercise <a
+  href="https://github.com/ozan-k/collection-exercises/tree/exercise5">here</a>.
+</p>
+
+
 <h2 id="class-linkedhashmapkv" style="position:relative;"><a href="#class-linkedhashmapkv" aria-label="class linkedhashmapkv permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Class: <code class="language-text">LinkedHashMap&lt;K,V></code></h2>
 <p>The <code class="language-text">LinkedHashMap</code> class is hash table and linked list implementation of the <code class="language-text">Map</code> interface, with <strong>predictable iteration order</strong>.</p>
 <p>It inherits HashMap class and implements the Map interface.</p>
@@ -410,6 +423,11 @@ public class MyHash {
 </li>
 <li>Iterate through each map and printout the key-value pairs.</li>
 </ul>
+
+<p>You can find the solution to this exercise <a
+  href="https://github.com/ozan-k/collection-exercises/tree/exercise6">here</a>.
+</p>
+
 <!-- ## Solution
 
 ```java
