@@ -260,31 +260,31 @@
 <li>It conveys elements from a source such as a data structure, an array, a generator function, or an I/O channel, through a pipeline of computational operations.</li>
 </ul>
 </li>
+<br>
 <li>
-  <br>
 <p><strong>Functional in nature</strong>:</p>
 <ul>
 <li>An operation on a stream produces a result, but does not modify its source.</li>
 <li>For example, filtering a stream obtained from a collection produces a new stream without the filtered elements, rather than removing elements from the source collection.</li>
 </ul>
 </li>
+<br>
 <li>
-  <br>
 <p><strong>Laziness-seeking</strong>:</p>
 <ul>
 <li>Many stream operations, such as filtering, mapping, or duplicate removal, can be implemented lazily, exposing opportunities for optimization. For example, "find the first String with three consecutive vowels" need not examine all the input strings.</li>
 </ul>
 </li>
+<br>
 <li>
-  <br>
 <p><strong>Possibly unbounded</strong>:</p>
 <ul>
 <li>While collections have a finite size, streams need not</li>
 <li>Short-circuiting operations such as <code class="language-text">limit(n)</code> or <code class="language-text">findFirst()</code> can allow computations on infinite streams to complete in finite time</li>
 </ul>
 </li>
+<br>
 <li>
-  <br>
 <p><strong>Consumable</strong>:</p>
 <ul>
 <li>The elements of a stream are only visited once during the life of a stream</li>
