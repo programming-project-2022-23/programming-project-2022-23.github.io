@@ -52,18 +52,18 @@
 <p>What would you do without collections? Nearly every Java application makes and processes collections. They are fundamental to many programming tasks as they let you group and process data.</p>
 <p>For example:</p>
 <ul>
-<li>You might want to create a collection of banking transactions to represent a customer’s statement</li>
-<li>Then, you might want to process this collection to find out how much money the customer spent</li>
-<li>Then, the biggest purchase</li>
+<li>You might want to create a collection of banking transactions to represent a customer’s statement.</li>
+<li>Then, you might want to process this collection to find out how much money the customer spent.</li>
+<li>Then, the biggest purchase.</li>
 <li>...</li>
 </ul>
 <p>Despite their importance, processing collections was far from trivial before Java 8.</p>
 <p><a href="https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html">Source</a></p>
 <h2 id="limitations-of-working-with-collections" style="position:relative;"><a href="#limitations-of-working-with-collections" aria-label="limitations of working with collections permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Limitations of working with collections</h2>
-<p>Typical processing patterns on collections are similar to SQL-like operations:</p>
+<p>Typical processing patterns on collections are similar to SQL-like operations.</p>
 <ul>
-<li><em>Finding</em>: find the heaviest dog</li>
-<li><em>Grouping</em>: group all dogs of a given breed</li>
+<li><em>Finding</em>: find the heaviest dog.</li>
+<li><em>Grouping</em>: group all dogs of a given breed.</li>
 </ul>
 <p>Most databases let you specify such operations <em>declaratively</em></p>
 <div class="gatsby-highlight" data-language="sql"><pre class="language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> id<span class="token punctuation">,</span> <span class="token function">MAX</span><span class="token punctuation">(</span>weight<span class="token punctuation">)</span> <span class="token keyword">from</span> dogs</code></pre></div>
