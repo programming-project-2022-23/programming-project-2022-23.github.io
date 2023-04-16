@@ -195,8 +195,8 @@
   <li>fuse multiple steps into a single pass on the data, e.g., in a filter-map-sum pipeline, filtering, mapping, and summing are done together.</li>
   <li>avoid examining all the data when it is not necessary, e.g., to find the first string longer than 1000 characters, it is only necessary to examine strings until you find the desired one.</li>
 </ul>
-<p>This behavior becomes even more important when the input stream is infinite and not merely large</p>
-<p>Intermediate operations are further divided into stateless and stateful operations</p>
+<p>This behavior becomes even more important when the input stream is not finite.</p>
+<p>Intermediate operations are further divided into stateless and stateful operations.</p>
 <p><strong>Stateless operations</strong>:</p>
 <ul>
 <li>Retain no state from previously seen element when processing a new element -- each element can be processed independently of operations on other elements</li>
