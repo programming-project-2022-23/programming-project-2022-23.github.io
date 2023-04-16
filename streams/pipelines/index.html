@@ -252,15 +252,16 @@
     </span></p>
 <p><a href="https://www.logicbig.com/tutorials/core-java-tutorial/java-util-stream/short-circuiting.html">Source</a></p>
 <h2 id="reduction-operations" style="position:relative;"><a href="#reduction-operations" aria-label="reduction operations permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reduction operations</h2>
-<p>A <strong>reduction operation</strong> takes a sequence of input elements and combines them into a single summary result.</p>
-<p><strong>Examples.</strong></p>
-<p>Finding the sum of a set of numbers</p>
+<p>A <strong>reduction operation</strong> takes a sequence of input elements and combines them into a single summary result, for example,</p>
+
+<p>finding the sum of a set of numbers,</p>
 <p><code class="language-text">[1, 2, 3, 4, 5] = 1 + 2 + 3 + 4 + 5 = 15</code></p>
-<p>Finding the average of a set of numbers</p>
+<p>finding the average of a set of numbers,</p>
 <p><code class="language-text">[1, 2, 3, 4, 5] = (1 + 2 + 3 + 4 + 5)/5 = 3</code></p>
-<p>Finding the highest on a set of numbers</p>
+<p>finding the highest on a set of numbers,</p>
 <p><code class="language-text">[1, 2, 3, 4, 5] = 5</code></p>
-<p>Accumulating elements into a list</p>
+<p> and accumulating elements into a list.</p>
+<br>
 <p>Here is an example of a reduction to sum elements in a list:</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> x <span class="token operator">:</span> numbers<span class="token punctuation">)</span> <span class="token punctuation">{</span>
