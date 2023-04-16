@@ -273,24 +273,24 @@
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">int</span> sum <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token class-name">Integer</span><span class="token operator">::</span><span class="token function">sum</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>An advantage of using streams is that the solution is inherently parallelizable.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">int</span> sum <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">parallelStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token class-name">Integer</span><span class="token operator">::</span><span class="token function">sum</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<p><strong>Mutable reduction</strong>: accumulates input elements into a mutable result container, such as</p>
+<p><strong>Mutable reduction</strong>: accumulates input elements into a mutable result container, such as:</p>
 <ul>
-<li>a <strong><code class="language-text">Collection</code></strong>or</li>
-<li>a <strong><code class="language-text">StringBuilder</code></strong>.</li>
+<li>a <strong><code class="language-text">Collection</code></strong></li>
+<li>a <strong><code class="language-text">StringBuilder</code></strong></li>
 </ul>
-<p><strong>Immutable reduction</strong> accumulates input elements into an immutable variable, such as</p>
+<p><strong>Immutable reduction</strong> accumulates input elements into an immutable variable, such as:</p>
 <ul>
-<li>an <strong><code class="language-text">int</code></strong> or</li>
-<li>a <strong><code class="language-text">boolean</code></strong>.</li>
+<li>an <strong><code class="language-text">int</code></strong></li>
+<li>a <strong><code class="language-text">boolean</code></strong></li>
 </ul>
 <p>The streams classes have <em>general</em> reduction operations, which repeatedly apply a combining operation</p>
 <ul>
 <li><strong><code class="language-text">reduce()</code></strong>: to perform an immutable reduction</li>
 <li><strong><code class="language-text">collect()</code></strong>: to perform a muttable reduction</li>
 </ul>
-<p>Common reduction operations are</p>
+<p>Common reduction operations are:</p>
 <ul>
-<li><strong><code class="language-text">sum()</code></strong>,</li>
-<li><strong><code class="language-text">max()</code></strong>, and</li>
-<li><strong><code class="language-text">count()</code></strong>.</li>
+<li><strong><code class="language-text">sum()</code></strong></li>
+<li><strong><code class="language-text">max()</code></strong></li>
+<li><strong><code class="language-text">count()</code></strong></li>
 </ul></div></div></div></div><div class="footer"><div class="footer-navbar"></div><div class="footer-content"><a href="/streams/introduction">Previous</a><a href="/streams/int-stream">Next</a></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/streams/pipelines";window.___webpackCompilationHash="6009b30b0983d0cae420";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-82df740e7cad994d0af0.js"],"app":["/app-28fa38d494eb64b1e03c.js"],"component---src-pages-index-js":["/component---src-pages-index-js-dcdcfbc8b0a42aa432c1.js"],"component---src-templates-template-js":["/component---src-templates-template-js-aadc16a91c2ce3d4e3c3.js"]};/*]]>*/</script><script src="/polyfill-82df740e7cad994d0af0.js" nomodule=""></script><script src="/component---src-templates-template-js-aadc16a91c2ce3d4e3c3.js" async=""></script><script src="/app-28fa38d494eb64b1e03c.js" async=""></script><script src="/framework-675a07cb9aff63570c38.js" async=""></script><script src="/webpack-runtime-af5602edea791ae856a0.js" async=""></script></body></html>
