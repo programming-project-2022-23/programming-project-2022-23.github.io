@@ -190,8 +190,8 @@
   </a>
     </span></p>
 <h2 id="intermediate-operations" style="position:relative;"><a href="#intermediate-operations" aria-label="intermediate operations permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Intermediate operations</h2>
-<p>Processing intermediate operations lazily allows for significant efficiencies:</p>
-<p>It fuses multiple steps into a single pass on the data. E.g., in a filter-map-sum pipeline, filtering, mapping, and summing are done together</p>
+<p>Processing intermediate operations lazily is efficient.</p>
+<p>This way, we can fuse multiple steps into a single pass on the data, e.g., in a filter-map-sum pipeline, filtering, mapping, and summing are done together.</p>
 <p>It avoids examining all the data when it is not necessary. E.g. To find the first string longer than 1000 characters, it is only necessary to examine strings until you find the desired one</p>
 <p>This behavior becomes even more important when the input stream is infinite and not merely large</p>
 <p>Intermediate operations are further divided into stateless and stateful operations</p>
