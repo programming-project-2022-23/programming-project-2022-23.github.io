@@ -62,11 +62,13 @@
  <li>can be "lazy",</li>
  <li>e.g. <code class="language-text">filter()</code>, <code class="language-text">map()</code>, <code class="language-text">sorted()</code>.</li>
 </ul>
-<p><strong>Terminal operations</strong>:
-Traverse the stream to produce a result or a side-effect
-Are mostly "eager"
-After a terminal operation is performed, the stream pipeline is considered consumed, and can no longer be used
-E.g. <code class="language-text">forEach()</code>, <code class="language-text">sum()</code>, <code class="language-text">max()</code></p>
+<p><strong>Terminal operations</strong></p>
+<ul>
+  <li>traverse the stream to produce a result or a side-effect, and</li>
+  <li>are mostly "eager".</li>
+<li>After a terminal operation is performed, the stream pipeline is considered consumed, and can no longer be used,</li>
+<li>e.g. <code class="language-text">forEach()</code>, <code class="language-text">sum()</code>, <code class="language-text">max()</code>.</li>
+</ul>
 <p>Here is our previous pipeline:</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StreamSolution2</span> <span class="token punctuation">{</span>
   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
