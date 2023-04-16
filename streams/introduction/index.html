@@ -65,14 +65,14 @@
 <li><em>Finding</em>: find the heaviest dog.</li>
 <li><em>Grouping</em>: group all dogs of a given breed.</li>
 </ul>
-<p>Most databases let you specify such operations <em>declaratively</em></p>
+<p>Most databases let you specify such operations <em>declaratively</em>.</p>
 <div class="gatsby-highlight" data-language="sql"><pre class="language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> id<span class="token punctuation">,</span> <span class="token function">MAX</span><span class="token punctuation">(</span>weight<span class="token punctuation">)</span> <span class="token keyword">from</span> dogs</code></pre></div>
 <p>We don’t need to implement <strong>how</strong> to calculate the maximum weight, we only express that we want it. You worry less about how to explicitly implement such queries. Why can’t we do something similar with collections?</p>
 <p>How many times do you find yourself re-implementing these operations using loops over and over again?</p>
 <p>How can we process really large collections efficiently?  Ideally, to speed up the processing, you want to leverage multicore architectures. As we will learn, writing parallel code is <strong>hard</strong> and <strong>error-prone</strong>!</p>
 <h2 id="streams" style="position:relative;"><a href="#streams" aria-label="streams permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Streams</h2>
 <p>The new abstraction called Stream lets you process data in a declarative way.</p>
-<p>Streams can leverage multi-core architectures without you having to write a single line of multithread code</p>
+<p>Streams can leverage multi-core architectures without you having to write a single line of multithread code.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
