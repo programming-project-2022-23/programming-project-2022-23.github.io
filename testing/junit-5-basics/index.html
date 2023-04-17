@@ -53,12 +53,14 @@
 <ul>
 <li>It has at least one test method.</li>
 <li>It has a visibility equal to public, protected or package protected.</li>
-<li>It has a no-arg constructor.</li>
-<ul>
-<li>Otherwise, we need to use JUnit 5's <code class="language-text">ParameterResolver</code> API</li>
+  <li>It has a no-arg constructor.
+    <ul>
+        <li>Otherwise, we need to use JUnit 5's 
+          <code class="language-text">ParameterResolver</code> API</li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul>
+
 <p>A <strong>test method</strong> exhibits the following characteristics:</p>
 <ul>
 <li>Is annotated with the <code class="language-text">org.junit.jupiter.api.Test</code> annotation.</li>
