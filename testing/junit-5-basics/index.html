@@ -397,15 +397,15 @@ Does your program break with these tests? If so, how would you fix it? -->
 <li>It reports failure on each test method.</li>
 <li>It supports sharing setup code between test methods.</li>
 </ul>
-<p>This is a design decision that permeates JUnit, and when you decide to report multiple failures per test, you begin to fight against JUnit, which <strong>is not recommended.</strong></p>
-<p>Instead of doing this:</p>
+<p>If you want to report multiple failures per test, which <strong>is recommended,</strong></p>
+<p>instead of doing this:</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
 <span class="token keyword">void</span> <span class="token function">testEverythingAtOnce</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token class-name">Calculator</span><span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token class-name">Calculator</span><span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token class-name">Calculator</span><span class="token punctuation">.</span><span class="token function">multiply</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
-<p>Do this:</p>
+<p>do this:</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
 <span class="token keyword">void</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token class-name">Calculator</span><span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
