@@ -146,7 +146,7 @@ The JUnit engine can run them in any order.</p>
 <p>The <code class="language-text">org.junit.jupiter.api.AfterEach</code> annotation is the counterpart of the <code class="language-text">org.junit.jupiter.api.BeforeEach</code> annotation.</p>
 <p>It is used to implement the “what goes up must come down” principle.</p>
 <p>A method marked with <code class="language-text">@AfterEach</code> is responsible for post-test execution cleanup.</p>
-<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CalculatorLifeCycle</span> <span class="token punctuation">{</span>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CalculatorAfterEach</span> <span class="token punctuation">{</span>
    <span class="token annotation punctuation">@AfterEach</span>
    <span class="token keyword">void</span> <span class="token function">tearDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I execute after each test method"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -168,8 +168,8 @@ The JUnit engine can run them in any order.</p>
 <p>The <code class="language-text">org.junit.jupiter.api.AfterAll</code> annotation is the counterpart of the <code class="language-text">org.junit.jupiter.api.BeforeAll</code> annotation.</p>
 <p><code class="language-text">@AfterAll</code> performs a single time method invocation (i.e., post the execution of all test cases of a test class).</p>
 <p>The method must be <strong>static</strong> and <strong>non-private</strong>.</p>
-<p>The annotation also has an inherited behavior. If there are superclass methods marked with @AfterAll they will be executed after any such methods of the test class.</p>
-<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CalculatorLifeCycle</span> <span class="token punctuation">{</span>
+<p>The annotation also has an inheritance behavior. If there are superclass methods marked with @AfterAll they will be executed after any such methods of the test class.</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CalculatorAfterAll</span> <span class="token punctuation">{</span>
    <span class="token annotation punctuation">@AfterAll</span>
    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">afterAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
       <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I execute once after all test methods"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
