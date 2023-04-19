@@ -435,9 +435,9 @@ Does your program break with these tests? If so, how would you fix it? -->
 <p>What if our test fails in the first assertion? We wouldn't know if the rest of the behavior if executing properly...</p>
 <p>In such cases, it is useful to use the <code class="language-text">assertAll</code> method:</p>
 <ul>
-<li>It clubs all related assertions, and</li>
-<li>Runs them as a single assertion to report only the failed ones.</li>
-<li>Each of the assertions is specified as a lambda expression</li>
+<li>It contains all related assertions, and</li>
+<li>runs them as a single assertion to report only the failed ones.</li>
+<li>Each of the assertions is specified as a lambda expression.</li>
 </ul>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
 <span class="token keyword">void</span> <span class="token function">testToStringAssertAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
