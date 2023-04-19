@@ -315,23 +315,23 @@ import static org.junit.jupiter.api.Assertions.*;
 class PersonTest {
    @Test
    void testEquals() {
-      Person p1 = new Person("Tiago", 30);
-      Person p2 = new Person("Tiago", 30);
+      Person p1 = new Person("John", 30);
+      Person p2 = new Person("John", 30);
 
       assertEquals(p1, p2);
    }
 
    @Test
    void testSameNameDiffAge() {
-      Person p1 = new Person("Tiago", 30);
-      Person p2 = new Person("Tiago", 25);
+      Person p1 = new Person("John", 30);
+      Person p2 = new Person("John", 25);
 
       assertNotEquals(p1, p2);
    }
 
    @Test
    void testSameAgeDiffName() {
-      Person p1 = new Person("Tiago", 30);
+      Person p1 = new Person("John", 30);
       Person p2 = new Person("Davide", 30);
 
       assertNotEquals(p1, p2);
@@ -346,8 +346,8 @@ class PersonTest {
   ```java
   @Test
   void nameComparisonShouldWorkWithNewStrings() {
-    Person p1 = new Person(new String("Tiago"), 30);
-    Person p2 = new Person(new String("Tiago"), 30);
+    Person p1 = new Person(new String("John"), 30);
+    Person p2 = new Person(new String("John"), 30);
 
     assertEquals(p1, p2);
   }
@@ -358,7 +358,7 @@ class PersonTest {
   ```java
   @Test
   void nameComparisonShouldBeCanseInsensitive() {
-    Person p1 = new Person("Tiago", 30);
+    Person p1 = new Person("John", 30);
     Person p2 = new Person("tiago", 30);
 
     assertEquals(p1, p2);
@@ -370,7 +370,7 @@ class PersonTest {
   ```java
   @Test
   void shouldNotBeEqualToNull() {
-    Person p1 = new Person("Tiago", 30);
+    Person p1 = new Person("John", 30);
     assertNotEquals(p1, null);
   }
   ```
@@ -426,10 +426,10 @@ Does your program break with these tests? If so, how would you fix it? -->
 <p>The code below is not a bad practice, as it is testing the behavior of <code class="language-text">Person::toString()</code>:</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
 <span class="token keyword">void</span> <span class="token function">testToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token class-name">Person</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"Tiago"</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Person</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"John"</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token class-name">String</span> str <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    <span class="token function">assertTrue</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">"Tiago"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">assertTrue</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">"John"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">assertTrue</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">"30"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>What if our test fails in the first assertion? We wouldn't know if the rest of the behavior if executing properly...</p>
@@ -441,10 +441,10 @@ Does your program break with these tests? If so, how would you fix it? -->
 </ul>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
 <span class="token keyword">void</span> <span class="token function">testToStringAssertAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token class-name">Person</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"Tiago"</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">Person</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"John"</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token class-name">String</span> str <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-  <span class="token function">assertAll</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">assertTrue</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">"Tiago"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function">assertAll</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">assertTrue</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">"John"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
             <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">assertTrue</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">"30"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
 <div class="gatsby-highlight" data-language="output"><pre class="language-output"><code class="language-output">[INFO] Results:
