@@ -71,7 +71,7 @@
 <p>The annotated method must be <strong>static</strong> and <strong>non-private</strong>.</p>
 <p>This hook is often used to create costly objects like database connection, which can be reused for all the test cases.</p>
 <p>The work done in a <code class="language-text">@BeforeAll</code> can be moved to <code class="language-text">@BeforeEach</code>, but since it is usually a computationally expensive operation, the overall test execution can take much longer.</p>
-<p>The annotation also has an inherited behavior. If there are superclass methods marked with @BeforeAll they will be executed before any such methods of the test class.</p>
+<p>The annotation also has an inheritance behavior. If there are superclass methods marked with @BeforeAll they will be executed before any such methods of the test class.</p>
 <p>Here is an example on how to use <code class="language-text">@BeforeAll</code>:</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CalculatorBeforeAll</span> <span class="token punctuation">{</span>
    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">int</span> inputValue<span class="token punctuation">;</span>
