@@ -72,7 +72,7 @@
 <p>This hook is often used to create costly objects like database connection, which can be reused for all the test cases.</p>
 <p>The work done in a <code class="language-text">@BeforeAll</code> can be moved to <code class="language-text">@BeforeEach</code>, but since it is usually a computationally expensive operation, the overall test execution can take much longer.</p>
 <p>The annotation also has an inheritance behavior. If there are superclass methods marked with @BeforeAll they will be executed before any such methods of the test class.</p>
-<p>Here is an example on how to use <code class="language-text">@BeforeAll</code>:</p>
+<p>Here is an example on how to use <code class="language-text">@BeforeAll</code>.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CalculatorBeforeAll</span> <span class="token punctuation">{</span>
    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">int</span> inputValue<span class="token punctuation">;</span>
 
@@ -102,7 +102,7 @@
 <p>A test case can have any number of methods marked with <code class="language-text">@BeforeEach</code> but the execution order is not guaranteed.
 The JUnit engine can run them in any order.</p>
 <p>These methods are executed before each and every test; so always make sure they <strong>contain initialization code that makes sense for all test cases</strong>.</p>
-<p>Here is an example on how to use <code class="language-text">@BeforeEach</code>:</p>
+<p>Here is an example on how to use <code class="language-text">@BeforeEach</code>.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">CalculatorBeforeEach</span> <span class="token punctuation">{</span>
    <span class="token keyword">private</span> <span class="token keyword">int</span> inputValue<span class="token punctuation">;</span>
 
