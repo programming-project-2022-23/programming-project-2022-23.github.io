@@ -210,7 +210,7 @@ Maximum</p> -->
 <blockquote>
 <p>"More computing sins are committed in the name of efficiency (without necessarily achieving it) than for any other single reason - including blind stupidity."</p>
 </blockquote>
-<p>If performance is a concern, you may want to write specific tests for it:</p>
+<p>If performance is a concern, you may want to write specific tests for it.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
 <span class="token keyword">void</span> <span class="token function">divideTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">long</span> start <span class="token operator">=</span> <span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">nanoTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -220,20 +220,19 @@ Maximum</p> -->
 
   <span class="token function">assertTrue</span><span class="token punctuation">(</span>elapsedTime <span class="token operator">&lt;</span> <span class="token number">1000000000</span><span class="token punctuation">,</span> <span class="token string">"Expected "</span> <span class="token operator">+</span> elapsedTime <span class="token operator">+</span> <span class="token string">" to be less than 1 second"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
-<p>A few cautions are called for:</p>
+<p>A few cautions are called for.</p>
 <ul>
-<li>You typically want to run the chunk of code a good number of times to shake out any issues around timing and the clock cycle</li>
+<li>You typically want to run the chunk of code a good number of times to shake out any issues around timing and the clock cycle.</li>
 <li>A performance test is very slow compared to the bulk of your tests:
 <ul>
-<li>Run them separately from your fast unit tests</li>
-<li>You don’t want to find out too long after someone introduces crummy code that doesn’t perform acceptably</li>
-<li>You will not need to run them as often</li>
+<li>Run them separately from your other unit tests.</li>
+<li>You don’t want to find out too long after someone introduces crummy code that doesn’t perform acceptably.</li>
+<li>You will not need to run them as often.</li>
 </ul>
 </li>
-<li>Even on the same machine, execution times can vary wildly depending on factor outside of your control, such as load on the system</li>
-<li>Several values may seem arbitrary</li>
+<li>Even on the same machine, execution times can vary wildly depending on factors out of your control, such as load on the system.</li>
 </ul>
-<p>If performance is a key consideration for you, you may want to use specific tools for the job:</p>
+<p>If performance is a key consideration for you, you may want to use specific tools for the job.</p>
 <ul>
 <li><a href="https://jmeter.apache.org/">JMeter</a></li>
 <li><a href="https://www.ej-technologies.com/products/jprofiler/overview.html">JProfiler</a></li>
