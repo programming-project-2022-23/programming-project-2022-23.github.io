@@ -52,7 +52,7 @@
 <p>JUnit 5 has added support for running a test a specified number of times, an essential when you work with tests that are flaky in nature, e.g., those with a stochastic component.</p>
 <p><strong>Flaky tests</strong> are those that exhibit both a passing and failing results despite zero changes to the code or test.</p>
 
-<p>To run a test for X number of times, mark it with the <code class="language-text">@RepeatedTest</code> annotation as shown below.</p>
+<p>To run a test for a specific number of times, mark it with the <code class="language-text">@RepeatedTest</code> annotation as shown below.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@RepeatedTest</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
 <span class="token keyword">void</span> <span class="token function">runMeMultipleTimes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token function">assertTrue</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
