@@ -370,7 +370,7 @@
 <p>You can uncover a good number of potential defects by asking yourself:</p>
 <p>“Does some given thing exist?”</p>
 <p>For a given method that accepts an argument or maintains a field, think through what will happen if the value is null, zero, or otherwise empty.</p>
-<p>Some existence tests for our previous <code class="language-text">Email</code> class could look like this:</p>
+<p>Some existence tests for our previous <code class="language-text">Email</code> class could look like this.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
 <span class="token keyword">void</span> <span class="token function">shouldFailOnNull</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
   <span class="token class-name">Throwable</span> t <span class="token operator">=</span> <span class="token function">catchThrowable</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">{</span>
