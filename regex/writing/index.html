@@ -95,12 +95,12 @@
 <td>Matches exactly "this is text"</td>
 </tr>
 <tr>
-<td>```this\s+is\s+text`</td>
+<td>this\s+is\s+text</td>
 <td>Matches the word "this" followed by <strong>one or more (<code class="language-text">+</code>) whitespace characters (<code class="language-text">\s</code>)</strong> followed by the word "is" followed by one or more whitespace characters followed by the word "text".</td>
 </tr>
 <tr>
 <td><code class="language-text">^\d+(\.\d+)?</code></td>
-<td><code class="language-text">^</code> defines that the pattern <strong>must start at beginning of a new line</strong>. <code class="language-text">\d+</code> matches <strong>one or more digits</strong>. The ? makes the statement in brackets <strong>optional (i.e. zero or more times</strong>. <code class="language-text">\.</code> matches ".", parentheses are used for <strong>grouping</strong>. Matches for example "5", "1.5" and "2.21".</td>
+<td><code class="language-text">^</code> defines that the pattern <strong>must start at beginning of a new line</strong>. <code class="language-text">\d+</code> matches <strong>one or more digits</strong>. The ? makes the statement in brackets <strong>optional</strong>. <code class="language-text">\.</code> matches ".", parentheses are used for <strong>grouping</strong>. Matches for example "5", "1.5" and "2.21".</td>
 </tr>
 </tbody>
 </table>
