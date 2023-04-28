@@ -331,7 +331,7 @@
 <li>whether it depends on the object being in a certain state, and</li>
 <li>if there are any other conditions.</li>
 </ul>
-<p>A web app that displays a customer’s account history might require the customer to be logged on. Shifting your car’s transmission from "Drive" to "Park" requires you to first stop—if your transmission allowed the shift while the car was moving.</p>
+<p>A web app that displays a customer’s account history might require the customer to be logged on. Shifting your car’s transmission from "Drive" to "Park" requires you to first stop.</p>
 <p>When you make assumptions about any state, you should verify that your code is reasonably well-behaved when those assumptions are not met.</p>
 <p>Imagine you’re developing the code for your car’s microprocessor-controlled transmission. You want tests that demonstrate how the transmission behaves when the car is moving versus when it is not.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
