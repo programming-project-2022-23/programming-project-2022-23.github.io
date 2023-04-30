@@ -139,7 +139,7 @@
 <li><strong>Replacement methods</strong></li>
 </ul>
 <h2 id="matcher-study-methods" style="position:relative;"><a href="#matcher-study-methods" aria-label="matcher study methods permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">Matcher</code>: Study methods</h2>
-<p>Review the input string and return a <code class="language-text">boolean</code> indicating whether the pattern was found.</p>
+<p>review the input string and return a <code class="language-text">boolean</code> indicating whether the pattern was found.</p>
 <p>On success, more information can be obtained via the <code class="language-text">start</code>, <code class="language-text">end</code>, and <code class="language-text">group</code> methods.</p>
 <ul>
 <li>
@@ -148,7 +148,7 @@
 </li>
 <li>
 <p><strong><code class="language-text">public boolean lookingAt()</code></strong></p>
-<p>Attempts to match the input sequence, starting at the beginning of the region, against the pattern.</p>
+<p>Attempts to match the input sequence against the pattern, starting at the beginning of the region.</p>
 </li>
 <li>
 <p><strong><code class="language-text">public boolean find()</code></strong></p>
@@ -156,7 +156,8 @@
 </li>
 <li>
 <p><strong><code class="language-text">public boolean find(int start)</code></strong></p>
-<p>Resets this matcher and then attempts to find the next subsequence of the input sequence that matches the pattern, starting at the specified index.</p>
+<p>Resets this matcher and then attempts to find the next subsequence of the input sequence 
+  that matches the pattern, starting at the specified index.</p>
 </li>
 </ul>
 <h2 id="matches" style="position:relative;"><a href="#matches" aria-label="matches permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">matches()</code></h2>
