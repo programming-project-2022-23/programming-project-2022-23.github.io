@@ -52,7 +52,7 @@
 <ul>
 <li>create files and directories,</li>
 <li>rename files and directories,</li>
-<li>delete files and directories</li>
+<li>delete files and directories,</li>
 <li>checks if a file or a directory exists,</li>
 <li>alter some of their properties.</li>
 </ul>
@@ -64,11 +64,11 @@
 <h2 id="the-file-and-path-objects" style="position:relative;"><a href="#the-file-and-path-objects" aria-label="the file and path objects permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The <code class="language-text">File</code> and <code class="language-text">Path</code> objects</h2>
 <p>A <code class="language-text">File</code> or a <code class="language-text">Path</code> object:</p>
 <ul>
-<li><strong>is NOT the actual file or directory</strong></li>
-<li>holds information about a file or a directory</li>
-<li>does not contain the data that the file holds</li>
-<li>holds methods that affect a particular file or directory</li>
-<li>works as an interface between a program and the OS functions that do the actual file manipulation</li>
+<li><strong>is NOT the actual file or directory,</strong></li>
+<li>holds information about a file or a directory,</li>
+<li>does not contain the data that the file holds,</li>
+<li>holds methods that affect a particular file or directory, and</li>
+<li>works as an interface between a program and the OS functions that do the actual file manipulation.</li>
 </ul>
 <p>Different operating systems organize their file system in different ways. By using <code class="language-text">File</code> objects, Java programs can uniformly handle files on all operating systems.</p>
 <p>Your program can invoke a <code class="language-text">File</code> method, and exactly what needs to be done for the particular OS the program is running on will be done.</p>
