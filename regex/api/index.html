@@ -293,7 +293,8 @@ Tel +39 0471011000
 
 Does the text above contain a phone number? Yes</code></pre></div>
 <p>We can iteratively call <strong><code class="language-text">find()</code></strong> to retrieve all matches on a input string.</p>
-<p>After a successful <strong><code class="language-text">find()</code></strong>, we can invoke the <strong><code class="language-text">group()</code></strong> on the matcher to retrieve the matched string segment:</p>
+<p>After a successful <strong><code class="language-text">find()</code></strong>, 
+  we can invoke the <strong><code class="language-text">group()</code></strong> on the matcher to retrieve the matched string segment.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FindAll</span> <span class="token punctuation">{</span>
   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">String</span> text <span class="token operator">=</span> <span class="token string">"The Lord of the Rings is an epic[1] high-fantasy novel "</span> <span class="token operator">+</span>
