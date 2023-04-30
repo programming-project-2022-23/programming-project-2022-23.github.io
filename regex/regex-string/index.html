@@ -163,12 +163,12 @@ What, so everyone’s supposed to sleep every single night 333? 333 realize that
 What so everyones supposed to sleep every single night now You realize that nighttime makes up half of all time</code></pre></div>
 <h2 id="grouping-and-back-reference" style="position:relative;"><a href="#grouping-and-back-reference" aria-label="grouping and back reference permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Grouping and back reference</h2>
 <p>You can group parts of your regular expression by using parenthesis: <code class="language-text">()</code></p>
-<p>This allows you to assign a repetition operator to a complete group:</p>
+<p>This allows you to assign a repetition operator to a complete group.</p>
 <div class="gatsby-highlight" data-language="output"><pre class="language-output"><code class="language-output">(abc){3} </code></pre></div>
-<p>The regex above matches <code class="language-text">abcabcabc</code></p>
-<p>Groups create a <strong>back reference</strong> to part of the regular expression</p>
-<p>A back reference stores the part of the String which matched the group</p>
-<p>It allows you to use this part in the <strong>replacement</strong></p>
+<p>The regex above matches <code class="language-text">abcabcabc</code>.</p>
+<p>Groups create a <strong>back reference</strong> to part of the regular expression.</p>
+<p>A back reference stores the part of the String which matched the group.</p>
+<p>It allows you to use this part in the <strong>replacement</strong>.</p>
 <p>Via the dollar sign <code class="language-text">$</code> you can refer to a group.</p>
 <p>$1 is the first group, $2 the second, etc.</p>
 <h2 id="replacing-string-segments-using-back-references" style="position:relative;"><a href="#replacing-string-segments-using-back-references" aria-label="replacing string segments using back references permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Replacing string segments using back references</h2>
