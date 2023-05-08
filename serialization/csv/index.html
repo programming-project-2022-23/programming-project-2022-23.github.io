@@ -112,19 +112,24 @@ zzz,yyy,xxx CRLF</code></pre></div>
 zzz,yyy,xxx</code></pre></div>
 </li>
 <li>
-<p>There may be an optional header line appearing as the first line of the file with the same format as normal record lines. This header will <em>contain names corresponding to the fields</em> in the file and <em>should contain the same number of fields as the records</em> in the rest of the file</p>
+<p>There may be an optional header line appearing as the first line of the file with the same format as normal record lines. 
+    This header will <em>contain names corresponding to the fields</em> in the file and <em>should contain the same number of fields as the records</em> in the rest of the file.</p>
 <p>For example:</p>
 <div class="gatsby-highlight" data-language="output"><pre class="language-output"><code class="language-output">field_name,field_name,field_name CRLF
 aaa,bbb,ccc CRLF
 zzz,yyy,xxx CRLF</code></pre></div>
 </li>
 <li>
-<p>Within the header and each record, there may be one or more fields, separated by commas. Each line should contain the same number of fields throughout the file. Spaces are considered part of a field and should not be ignored. The last field in the record must not be followed by a comma.</p>
+<p>Within the header and each record, there may be one or more fields, separated by commas. 
+    Each line should contain the same number of fields throughout the file. 
+    Spaces are considered part of a field and should not be ignored. 
+    The last field in the record must not be followed by a comma.</p>
 <p>For example:</p>
 <div class="gatsby-highlight" data-language="output"><pre class="language-output"><code class="language-output">aaa,bbb,ccc</code></pre></div>
 </li>
 <li>
-<p>Each field may or may not be enclosed in double quotes (however some programs, such as Microsoft Excel, do not use double quotes at all).  If fields are not enclosed with double quotes, then double quotes may not appear inside the fields.</p>
+<p>Each field may or may not be enclosed in double quotes (however some programs, such as Microsoft Excel, do not use double quotes at al0l).  
+    If fields are not enclosed with double quotes, then double quotes may not appear inside the fields.</p>
 <p>For example:</p>
 <div class="gatsby-highlight" data-language="output"><pre class="language-output"><code class="language-output">&quot;aaa&quot;,&quot;bbb&quot;,&quot;ccc&quot; CRLF
 zzz,yyy,xxx</code></pre></div>
