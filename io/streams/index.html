@@ -121,9 +121,9 @@
 <p>Often a processing stream acts as a buffer for the data coming from another stream. A buffer is a block of main memory used as a work area.  For example, disks usually deliver data in blocks of 512 bytes, no matter how few bytes a program has asked for. Usually the blocks of data are buffered and delivered from the buffer to the program in the amount the program asked for.</p>
 <p>In the picture:</p>
 <ul>
-<li>the keyboard sends data to <code class="language-text">InputStream System.in</code>, which</li>
-<li>is connected to an <code class="language-text">InputStreamReader</code> stream, which</li>
-<li>is connected to a <code class="language-text">BufferedReader</code> stream.</li>
+<li>the keyboard sends data to <code class="language-text">InputStream System.in</code>, </li>
+<li>which is connected to an <code class="language-text">InputStreamReader</code> stream,</li>
+<li>which is connected to a <code class="language-text">BufferedReader</code> stream.</li>
 </ul>
 <p><code class="language-text">System.in</code> is a stream object that the Java system automatically creates when your program starts running.</p>
 <p><img src="/10dfddddf1e2c5edeec75ac50f5e257e/connectedStreams.gif" alt=""></p>
