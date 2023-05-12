@@ -152,12 +152,12 @@
 <p><strong>Serial execution</strong>:</p>
 <ul>
 <li>Executing computations one-at-a-time</li>
-<li>Concurrent processes can be executed on one core:
+<li>Concurrent processes can be executed on one core 
 <ul>
-<li>Enables <em>pseudo parallelism</em></li>
-<li>by interleaving the execution steps of each process via time-sharing slices</li>
-<li><strong>only one process runs at a time</strong>, and if it does not complete during its time slice, it is <strong>paused</strong>, another process <strong>begins or resumes</strong>, and then later the original process is resumed.</li>
-<li>multiple processes are part-way through execution at a single instant, but only one process is being executed at that instant</li>
+<li>by <em>pseudo parallelism</em>, that is,</li>
+<li>by interleaving the execution steps of each process via time-sharing slices.</li>
+<li><strong>Only one process runs at a time</strong>, and if it does not complete during its time slice, it is <strong>paused</strong>, another process <strong>begins or resumes</strong>, and then later the original process is resumed.</li>
+<li>Only one process is executed at any instant.</li>
 </ul>
 </li>
 </ul>
