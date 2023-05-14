@@ -384,14 +384,14 @@ th1<span class="token punctuation">.</span><span class="token function">setPrior
 <p><code class="language-text">Thread.sleep</code> causes the current thread to suspend execution for a specified period.</p>
 <p>It is a means of making processor time available to the other threads</p>
 <ul>
-<li>for pacing and</li>
-<li>waiting for another thread with tasks that have time requirements.</li>
+<li>for pacing </li>
+<li>and waiting for another thread with tasks that have time requirements.</li>
 </ul>
-<p><code class="language-text">sleep</code> is available in two versions:</p>
+<p><code class="language-text">sleep</code> is available in two versions, that is,</p>
 <ul>
-<li>time in milliseconds <code class="language-text">Thread.sleep(long millis);</code></li>
-<li>time in nanoseconds: <code class="language-text">Thread.sleep(long millis, long nanos);</code></li>
-<li>it's not necessarily precise</li>
+<li>time in milliseconds with <code class="language-text">Thread.sleep(long millis)</code></li>
+<li>and time in nanoseconds with <code class="language-text">Thread.sleep(long millis, long nanos).</code></li>
+<li>It's not necessarily precise.</li>
 </ul>
 <p>Here is a demonstration of how to use it:</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SleepMessage</span> <span class="token punctuation">{</span>
