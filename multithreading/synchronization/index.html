@@ -608,19 +608,21 @@ public class T2 implements Runnable {
 <h2 id="synchronization-1" style="position:relative;"><a href="#synchronization-1" aria-label="synchronization 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Synchronization</h2>
 <ul>
 <li>
-<p>Always use the lowest level of locking</p>
+<p>Always use the lowest level of locking.</p>
 <ul>
-<li>Java Synchronization provides data integrity on the cost of performance, so it should be used only when it's absolutely necessary</li>
+<li>Java Synchronization provides data integrity on the cost of performance, so it should be used only when it's absolutely necessary.</li>
 </ul>
 </li>
 <li>
 <p>Reentrant synchronization</p>
 <ul>
 <li>Recall that a thread cannot acquire a lock owned by another thread.</li>
-<li>But a thread can acquire a lock that it already owns.</li>
+<li>However, a thread can acquire a lock that it already owns.</li>
 <li>Allowing a thread to acquire the same lock more than once enables reentrant synchronization.</li>
-<li>This describes a situation where synchronized code, directly or indirectly, invokes a method that also contains synchronized code, and both sets of code use the same lock.</li>
-<li>Without reentrant synchronization, synchronized code would have to take many additional precautions to avoid having a thread cause itself to block.</li>
+<li>This describes a situation where synchronized code, directly or indirectly, invokes 
+   a method that also contains synchronized code, and both sets of code use the same lock.</li>
+<li>Without reentrant synchronization, synchronized code would have to take many additional 
+   precautions to avoid having a thread cause itself to block.</li>
 </ul>
 </li>
 </ul>
